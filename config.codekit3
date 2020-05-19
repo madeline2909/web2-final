@@ -283,23 +283,23 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section7/portrait-1.jpeg": {
+	"/deploy/img/section6/portrait-1.jpeg": {
 		"ft": 16384,
 		"iS": 15693,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section7/portrait-1.jpg",
+		"oAP": "/deploy/img/section6/portrait-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section7/portrait-2.jpeg": {
+	"/deploy/img/section6/portrait-2.jpeg": {
 		"ft": 16384,
 		"iS": 36345,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/section7/portrait-2.jpg",
+		"oAP": "/deploy/img/section6/portrait-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -588,19 +588,6 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_section-8.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_section-8.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -668,14 +655,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-7.html",
-		"oF": 0
-		},
-	"/dev/section-8.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/section-8.html",
 		"oF": 0
 		}
 	},
