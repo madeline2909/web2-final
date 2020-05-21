@@ -419,6 +419,13 @@ textarea {
 /* =============
     Section 1
 ============= */
+#section-1 {
+  background-image: url("../img/section1/hero1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
 /* =============
     Section 2
 ============= */
