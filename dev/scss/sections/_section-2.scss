@@ -1,3 +1,61 @@
 /* =============
     Section 2
 ============= */
+#section-2{
+    #section-2-container{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas:
+        "c1 c1 c1"
+        "i1 i1 i1"
+        ". a2 ."
+        ". i2 ."
+        ". i3 .";
+
+        aside{
+            background-position: center;
+            background-size: cover;
+        }
+        #section-2-img1{
+            grid-area: i1;
+            background-image: url('../img/section2/about-1.jpg');
+            height: 330px;
+            
+        }
+        #section-2-img2{
+            grid-area: i2;
+            background-image: url('../img/section2/about-2.jpg');
+            height: 170px;
+        }
+        #section-2-img3{
+            grid-area: i3;
+            background-image: url('../img/section2/about-3.jpg');
+            height: 170px;
+        }
+
+        #section-2-article2{
+            grid-area: a2;
+        }
+        #section-2-content1{
+            grid-area: c1;
+
+            background-image: url('../img/section2/hero2.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 510px;
+        
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas:
+            ". h1 ."
+            ". a1 .";
+            h1{
+                grid-area: h1;
+            }
+            #section-2-article1{
+                grid-area: a1;
+            }
+        }
+    }
+}
+    
