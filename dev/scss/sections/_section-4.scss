@@ -2,13 +2,48 @@
     Section 4
 ============= */
 #section-4{
+    #section-4-container{
+        background-image: url('../img/section4/hero4.jpg');
+        background-position: center;
+        background-size: cover;
+        height: auto;
+    }
+
     .section-4-img{
         background-position: center;
         background-size: cover;
-        #gallery1{
-            background-image: url('../img/section4/gallery-1.jpg');
-            height: 150px;
-        }
+    }
+    #gallery1{
+        background-image: url('../img/section4/gallery-1.jpg');
+        height: 150px;
+    }
+    #gallery2{
+        background-image: url('../img/section4/gallery-2.jpg');
+        height: 150px;
+    }
+    #gallery3{
+        background-image: url('../img/section4/gallery-3.jpg');
+        height: 150px;
+    }
+    #gallery4{
+        background-image: url('../img/section4/gallery-4.jpg');
+        height: 150px;
+    }
+    #gallery5{
+        background-image: url('../img/section4/gallery-5.jpg');
+        height: 150px;
+    }
+    #gallery6{
+        background-image: url('../img/section4/gallery-6.jpeg');
+        height: 255px;
+    }
+    #gallery7{
+        background-image: url('../img/section4/gallery-7.jpg');
+        height: 150px;
+    }
+    #gallery8{
+        background-image: url('../img/section4/gallery-8.jpg');
+        height: 150px;
     }
 
 }

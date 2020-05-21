@@ -522,21 +522,111 @@ textarea {
 /* =============
     Section 4
 ============= */
+#section-4 #section-4-container {
+  background-image: url("../img/section4/hero4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
 #section-4 .section-4-img {
   background-position: center;
   background-size: cover;
 }
-#section-4 .section-4-img #gallery1 {
+#section-4 #gallery1 {
   background-image: url("../img/section4/gallery-1.jpg");
+  height: 150px;
+}
+#section-4 #gallery2 {
+  background-image: url("../img/section4/gallery-2.jpg");
+  height: 150px;
+}
+#section-4 #gallery3 {
+  background-image: url("../img/section4/gallery-3.jpg");
+  height: 150px;
+}
+#section-4 #gallery4 {
+  background-image: url("../img/section4/gallery-4.jpg");
+  height: 150px;
+}
+#section-4 #gallery5 {
+  background-image: url("../img/section4/gallery-5.jpg");
+  height: 150px;
+}
+#section-4 #gallery6 {
+  background-image: url("../img/section4/gallery-6.jpeg");
+  height: 255px;
+}
+#section-4 #gallery7 {
+  background-image: url("../img/section4/gallery-7.jpg");
+  height: 150px;
+}
+#section-4 #gallery8 {
+  background-image: url("../img/section4/gallery-8.jpg");
   height: 150px;
 }
 
 /* =============
     Section 5
 ============= */
+#section-5 #section-5-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: "c1 c1 c1" ". c2 .";
+}
+#section-5 #section-5-container > section {
+  grid-area: c2;
+}
+#section-5 #section-5-content1 {
+  grid-area: c1;
+  display: grid;
+  background-image: url("../img/section5/hero5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-size: 130%;
+  height: 200px;
+}
+
 /* =============
     Section 6
 ============= */
+#section-6 #section-6-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 ." ". c4 .";
+}
+#section-6 #section-6-container > section {
+  grid-area: c2;
+}
+#section-6 #section-6-container > h4 {
+  grid-area: c3;
+}
+#section-6 #section-6-container > ul {
+  grid-area: c4;
+}
+#section-6 #section-6-container > ul li {
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+}
+#section-6 #profile1 {
+  background-image: url("../img/section6/portrait-1.jpeg");
+  height: 140px;
+  width: 140px;
+}
+#section-6 #profile2 {
+  background-image: url("../img/section6/portrait-2.jpeg");
+  height: 140px;
+  width: 140px;
+}
+#section-6 #section-6-content1 {
+  grid-area: c1;
+  display: grid;
+  background-image: url("../img/section6/hero6.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
 /* =============
     Section 7
 ============= */

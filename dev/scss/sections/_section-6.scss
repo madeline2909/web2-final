@@ -1,3 +1,46 @@
 /* =============
     Section 6
 ============= */
+#section-6{
+    #section-6-container{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas:
+        "c1 c1 c1"
+        ". c2 ."
+        ". c3 ."
+        ". c4 .";
+        >section{
+            grid-area: c2;
+        }
+        >h4{
+            grid-area: c3;
+        }
+        >ul{
+            grid-area: c4;
+            li{
+                background-position: center;
+                background-size: cover;
+                border-radius: 100%;
+            }
+        }
+    }
+    #profile1{
+        background-image: url('../img/section6/portrait-1.jpeg');
+        height: 140px;
+        width: 140px;
+    }
+    #profile2{
+        background-image: url('../img/section6/portrait-2.jpeg');
+        height: 140px;
+        width: 140px;
+    }
+    #section-6-content1{
+        grid-area: c1;
+        display: grid;
+        background-image: url('../img/section6/hero6.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+    }
+}
