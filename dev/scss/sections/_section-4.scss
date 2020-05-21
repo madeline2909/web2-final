@@ -2,5 +2,13 @@
     Section 4
 ============= */
 #section-4{
-    
+    .section-4-img{
+        background-position: center;
+        background-size: cover;
+        #gallery1{
+            background-image: url('../img/section4/gallery-1.jpg');
+            height: 150px;
+        }
+    }
+
 }

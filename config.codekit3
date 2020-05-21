@@ -249,15 +249,15 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/section4/hero4-2.jpg": {
-		"ft": 16384,
-		"iS": 102605,
-		"jF": 0,
+	"/deploy/img/section4/hero4-2.png": {
+		"ft": 32768,
+		"iS": 983696,
 		"oA": 0,
-		"oAP": "/deploy/img/section4/hero4-2.jpg",
+		"oAP": "/deploy/img/section4/hero4-2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section4/hero4.jpg": {
