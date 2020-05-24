@@ -16,6 +16,7 @@
             background-position: center;
             background-size: cover;
         }
+        
         #section-2-img1{
             grid-area: i1;
             background-image: url('../img/section2/about-1.jpg');
@@ -40,7 +41,8 @@
             grid-area: c1;
 
             background-image: url('../img/section2/hero2.jpg');
-            background-position: center;
+            background-position: top center;
+            background-position: 0 20px;
             background-size: cover;
             height: 510px;
         
@@ -48,9 +50,21 @@
             grid-template-columns: 15px auto 15px;
             grid-template-areas:
             ". h1 ."
+            ". r1 ."
             ". a1 .";
             h1{
                 grid-area: h1;
+                padding-left: 25px;
+                padding-bottom: 30px;
+                font-style: italic;
+                
+            }
+            #section-2-rectangle1{
+                height: 100px;
+                grid-area: r1;
+                margin: 0 25px;
+                border: solid white 1px;
+                background-color: rgba(255, 255, 255, .18);
             }
             #section-2-article1{
                 grid-area: a1;

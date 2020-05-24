@@ -378,12 +378,27 @@ ul li {
   }
 }
 
+.content-spacing {
+  padding-top: 38px;
+}
+
 /* =============
     Typography
 ============= */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.5625rem;
+  font-weight: 700;
+  color: #F9F6EF;
+}
+h1 > span {
+  font-weight: 200;
 }
 
 /* =============
@@ -457,7 +472,7 @@ textarea {
     Header
 ============= */
 header {
-  background-color: pink;
+  background-color: rgba(62, 57, 28, 0.5);
   left: 0;
   position: fixed;
   top: 0;
@@ -476,7 +491,10 @@ header > div {
 }
 header > div #logo-container {
   grid-area: logo;
-  padding: 5px 20px;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 header > div #burger-container {
   align-items: center;
@@ -494,14 +512,14 @@ header > div #burger-container i {
   cursor: pointer;
 }
 header > div #nav-container {
-  background-color: #fff;
+  background-color: rgba(62, 57, 28, 0.5);
   display: none;
   grid-area: nav;
   padding: 20px;
 }
 @media (min-width: 992px) {
   header > div #nav-container {
-    background-color: pink;
+    background-color: rgba(62, 57, 28, 0.5);
     display: block !important;
   }
 }
@@ -518,6 +536,17 @@ header > div #nav-container {
   background-position: -120px 0;
   background-size: cover;
   height: 400px;
+}
+@media (min-width: 768px) {
+  #section-1 {
+    height: 450px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 992px) {
+  #section-1 {
+    height: 700px;
+  }
 }
 
 /* =============
@@ -553,15 +582,26 @@ header > div #nav-container {
 #section-2 #section-2-container #section-2-content1 {
   grid-area: c1;
   background-image: url("../img/section2/hero2.jpg");
-  background-position: center;
+  background-position: top center;
+  background-position: 0 20px;
   background-size: cover;
   height: 510px;
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". h1 ." ". a1 .";
+  grid-template-areas: ". h1 ." ". r1 ." ". a1 .";
 }
 #section-2 #section-2-container #section-2-content1 h1 {
   grid-area: h1;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  font-style: italic;
+}
+#section-2 #section-2-container #section-2-content1 #section-2-rectangle1 {
+  height: 100px;
+  grid-area: r1;
+  margin: 0 25px;
+  border: solid white 1px;
+  background-color: rgba(255, 255, 255, 0.18);
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 {
   grid-area: a1;
