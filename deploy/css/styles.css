@@ -360,6 +360,15 @@ ul li {
   list-style: none;
 }
 
+.mobile-show {
+  display: static;
+}
+@media (min-width: 768px) {
+  .mobile-show {
+    display: none;
+  }
+}
+
 .show-for-md {
   display: none;
 }
@@ -380,6 +389,7 @@ ul li {
 
 .content-spacing {
   padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 /* =============
@@ -399,6 +409,79 @@ h1 {
 }
 h1 > span {
   font-weight: 200;
+}
+
+#section-2 h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5625rem;
+  line-height: 2.0625rem;
+  font-weight: 700;
+  color: #F9F6EF;
+}
+#section-2 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+#section-2 p > span {
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+}
+h3 > span {
+  font-weight: 300;
+}
+
+#section-3-intro > h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.375rem;
+  line-height: 2.375rem;
+  font-weight: 700;
+}
+#section-3-intro > p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 600;
+  color: #F9F6EF;
+}
+
+.section-3-mission {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  color: #3E391C;
+}
+.section-3-mission .title {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+.section-3-mission .bold {
+  font-weight: 600;
+}
+
+#section-3-content4 > h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #63817C;
+}
+#section-3-content4 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 300;
+  color: #3E391C;
 }
 
 /* =============
@@ -552,6 +635,9 @@ header > div #nav-container {
 /* =============
     Section 2
 ============= */
+#section-2 {
+  background-color: #F9F6EF;
+}
 #section-2 #section-2-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -570,46 +656,62 @@ header > div #nav-container {
   grid-area: i2;
   background-image: url("../img/section2/about-2.jpg");
   height: 170px;
+  margin-bottom: 15px;
 }
 #section-2 #section-2-container #section-2-img3 {
   grid-area: i3;
   background-image: url("../img/section2/about-3.jpg");
+  background-position: -100px -140px;
+  background-size: 200%;
   height: 170px;
+  margin-bottom: 26px;
 }
 #section-2 #section-2-container #section-2-article2 {
   grid-area: a2;
+}
+#section-2 #section-2-container #section-2-article2 > p {
+  color: #3E391C;
+  padding: 23px 0;
 }
 #section-2 #section-2-container #section-2-content1 {
   grid-area: c1;
   background-image: url("../img/section2/hero2.jpg");
   background-position: top center;
-  background-position: 0 20px;
   background-size: cover;
-  height: 510px;
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". h1 ." ". r1 ." ". a1 .";
+  height: auto;
 }
 #section-2 #section-2-container #section-2-content1 h1 {
-  grid-area: h1;
+  margin: 0 15px;
   padding-left: 25px;
-  padding-bottom: 30px;
   font-style: italic;
+}
+#section-2 #section-2-container #section-2-content1 #section-2-article1 h2 {
+  margin: 0 15px;
+}
+#section-2 #section-2-container #section-2-content1 #section-2-article1 > p {
+  border-top: solid white 1px;
+  background-color: rgba(151, 143, 79, 0.49);
+  padding: 23px 25px 23px 15px;
+  color: #F9F6EF;
+}
+#section-2 #section-2-container #section-2-content1 #section-2-article1 h3 {
+  margin: 0 15px;
+  text-align: right;
+  position: absolute;
 }
 #section-2 #section-2-container #section-2-content1 #section-2-rectangle1 {
   height: 100px;
-  grid-area: r1;
-  margin: 0 25px;
+  margin: 0 40px;
   border: solid white 1px;
   background-color: rgba(255, 255, 255, 0.18);
-}
-#section-2 #section-2-container #section-2-content1 #section-2-article1 {
-  grid-area: a1;
 }
 
 /* =============
     Section 3
 ============= */
+#section-3 {
+  background-color: #F9F6EF;
+}
 #section-3 #section-3-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -617,15 +719,53 @@ header > div #nav-container {
 }
 #section-3 #section-3-content1 {
   grid-area: c1;
+  background-color: rgba(62, 57, 28, 0.2);
+  background-blend-mode: multiply;
   background-image: url("../img/section3/hero3.jpg");
   background-position: center;
   background-size: cover;
-  height: 485px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content1 {
+    background-color: white;
+  }
+}
+#section-3 #section-3-content1 h1 {
+  margin: 0 15px;
+  padding-left: 25px;
+  font-style: italic;
+}
+#section-3 #section-3-content1 h2 {
+  color: #EFC861;
+  padding-left: 30px;
+  width: 60%;
+  padding-top: 81px;
+}
+@media (min-width: 992px) {
+  #section-3 #section-3-content1 h2 #let-our {
+    color: #F9F6EF;
+  }
+}
+#section-3 #section-3-content1 h2 #voices {
+  color: #F9F6EF;
+}
+@media (min-width: 992px) {
+  #section-3 #section-3-content1 h2 #voices {
+    color: #EFC861;
+  }
+}
+#section-3 #section-3-content1 p {
+  padding: 20px 15px 30px;
+  text-align: right;
 }
 #section-3 aside {
   background-position: center;
   background-size: cover;
   height: 165px;
+}
+#section-3 .title {
+  padding-top: 22px;
 }
 #section-3 #section-3-content2 {
   grid-area: c2;
@@ -635,6 +775,7 @@ header > div #nav-container {
 }
 #section-3 #section-3-content2 #section-3-img2 {
   background-image: url("../img/section3/mission-3.jpg");
+  margin: 20px 0 15px;
 }
 #section-3 #section-3-content3 {
   grid-area: c3;
@@ -650,6 +791,18 @@ header > div #nav-container {
 }
 #section-3 #section-3-content4 #section-3-img5 {
   background-image: url("../img/section3/mission-5.jpg");
+  background-position: -20px -20px;
+  background-size: 180%;
+  height: 240px;
+  width: 240px;
+  margin: 30px auto 15px auto;
+}
+#section-3 #section-3-content4 h2 {
+  text-align: center;
+  margin: 0 10px;
+}
+#section-3 #section-3-content4 p {
+  margin: 10px 0 30px 0;
 }
 
 /* =============

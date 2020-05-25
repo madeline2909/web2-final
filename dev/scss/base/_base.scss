@@ -9,6 +9,12 @@ ul{
     }
 }
 
+.mobile-show{
+    display: static;
+    @include md{
+        display: none;
+    }
+}
 .show-for-md{
     display: none;
     @include md{
@@ -24,4 +30,5 @@ ul{
 }
 .content-spacing{
     padding-top: 38px;
+    padding-bottom: 38px;
 }
