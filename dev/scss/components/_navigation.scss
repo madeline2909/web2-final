@@ -21,7 +21,7 @@
                 
                 a:link,
                 a:visited {
-                    color: $black;
+                    color: $cream;
                     font-size: rem-calc(20);
                     text-decoration: none;
                     transition: 0.25s;
@@ -29,13 +29,13 @@
     
                 a:hover,
                 a:active {
-                    color: $white;
+                    color: $yellow;
                 }
             }
 
             a:link,
             a:visited {
-                color: $white;
+                color: $cream;
                 font-size: rem-calc(20);
                 text-decoration: none;
                 transition: 0.25s;
@@ -43,7 +43,7 @@
 
             a:hover,
             a:active {
-                color: $black;
+                color: $yellow;
             }
         }
     }

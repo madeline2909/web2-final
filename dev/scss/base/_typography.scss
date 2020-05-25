@@ -5,14 +5,23 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     padding: 0;
 }
+
 h1{
     font-family: 'Raleway', sans-serif;
     font-size: rem-calc(22);
     line-height: rem-calc(25);
     font-weight: 700;
     color: $cream;
+    font-style: italic;
     >span{
         font-weight: 200;
+    }
+}
+#nav-container{
+    li{
+        font-family: 'Raleway', sans-serif;
+        font-size: rem-calc(18);
+        font-weight: 500;
     }
 }
 #section-2{
@@ -88,6 +97,77 @@ h3{
         line-height: rem-calc(22);
         font-weight: 300;
         color: $greenbrown;
+    }
+}
+#caption{
+    font-family: 'Raleway', sans-serif;
+    font-size: rem-calc(16);
+    line-height: rem-calc(20);
+    font-weight: 300;
+    font-style: italic;
+    color: $cream;
+    .bold{
+        font-style: normal;
+        font-weight: 600;
+    }
+}
+#description{
+    font-family: 'Raleway', sans-serif;
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+    font-weight: 400;
+    color: $cream;
+}
+#section-5-container{
+    >section{
+        color: $lightgreen;
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(18);
+            font-style: italic;
+            font-weight: 800;
+        }
+        p{
+            font-family: 'Raleway', sans-serif;
+            font-size: rem-calc(16);
+            line-height: rem-calc(22);
+            font-weight: 400;
+        }
+    } 
+}
+#section-6-container{
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: rem-calc(16);
+        line-height: rem-calc(22);
+        font-weight: 300;
+        color: $lightgreen;
+        .bold{
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}
+.button{
+    font-family: 'Raleway', sans-serif;
+    font-size: rem-calc(24);
+    line-height: rem-calc(29);
+    font-weight: 600;
+}
+#section-7{
+    h5{
+        font-family: 'Raleway', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 600;
+        color: $veryyellow;
+    }
+}
+footer{
+    h5, li{
+        font-family: 'Raleway', sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 300;
+        color: $cream;
     }
 }
 // font-family: 'Playfair Display', serif;

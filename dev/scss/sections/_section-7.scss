@@ -1,3 +1,68 @@
 /* =============
     Section 7
 ============= */
+#section-7{
+    .button{
+        a:link,
+        a:visited {
+            text-align: center;
+            display: block;
+            padding: 12px 20px;
+            background-color: $green;
+            color: $cream;
+            text-decoration: none;
+            transition: 0.25s;
+        }
+
+        a:hover,
+        a:active {
+            color: $green;
+            background-color: $cream;
+            border: $green 1px;
+        }
+    }
+    
+    #section-7-news{
+        background-color: $veryyellow;
+        height: auto;
+        #email-container{
+            padding: 30px 15px;
+            h5{
+                padding: 10px;
+                background-color: $cream;
+            }
+        }
+        #news{
+            margin: 0 74px;
+            padding-bottom: 30px;
+        }
+        
+    }
+    #section-7-donate{
+        background-color: $cream;
+        height: auto;
+        #donate{
+            margin: 0 74px;
+            padding-top: 30px;
+        }
+        ul{
+            margin: 25px 0 30px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            li{
+                font-size: 50px;
+            }
+        }
+        
+        #paypal{
+            display: flex;
+            justify-content: center;
+            padding: 8px 60px;
+            color: $white;
+            border-radius: 100px;
+            background-color: $blue;
+        }
+        
+    }
+}

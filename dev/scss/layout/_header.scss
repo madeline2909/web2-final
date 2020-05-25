@@ -22,18 +22,20 @@ header {
         #logo-container {
             grid-area: logo;
             display: flex;
-            width: 90%;
             justify-content: space-evenly;
             align-items: center;
+            h1{
+                font-style: normal;
+            }
         }
 
         #burger-container {
+            grid-area: burger;
             align-items: center;
             display: flex;
-            grid-area: burger;
             justify-content: flex-end;
             padding: 20px;
-
+            
             @include lg {
                 display: none !important;
             }

@@ -1,3 +1,49 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    background-image: url('../img/footer/footer.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 333px;
+    background-size: 200%;
+    background-position: -50px -70px;
+    #footer-tabs{
+        padding-top: 33px;
+        li{
+            text-align: right;
+            margin: 18px;
+        }
+        
+    }
+    #footer-icons{
+        padding-top: 33px;
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+        width: 60%;
+        li{
+            font-size: 35px;
+            a:link,
+            a:visited {
+                color: $cream;
+                text-decoration: none;
+                transition: 0.25s;
+            }
+    
+            a:hover,
+            a:active {
+                color: $greenbrown;
+            }
+        }
+    }
+    h5{
+        margin: 0 25px;
+        border-right: solid white 1px;
+        display: flex;
+        height: 35%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
