@@ -1166,7 +1166,7 @@ footer h5 {
   padding-top: 30px;
 }
 #section-7 #section-7-donate ul {
-  margin: 25px 0 30px;
+  padding: 25px 0 30px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
