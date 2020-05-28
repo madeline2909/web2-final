@@ -22,16 +22,18 @@
     }
     ul{
         display: grid;
-        grid-template-columns: 15px repeat(2, 1fr) 15px;
+        grid-template-columns: 3% 1fr 3% 1fr 3%;
         grid-template-areas: 
-        ". cap g1 ."
-        "g6 g6 g4 ."
-        "g6 g6 g5 ."
-        ". g3 g3 ."
-        ". g7 g7 ."
-        ". des des ."
-        ". g8 g8 .";
-        row-gap: 10px;
+        ". . . g1 ."
+        ". cap . g1 ."
+        ". cap . g4 ."
+        "g6 g6 . g4 ."
+        "g6 g6 . g5 ."
+        ". g3 g3 g3 ."
+        ". g7 g7 g7 ."
+        ". des des des ."
+        ". g8 g8 g8 .";
+        grid-gap: 10px 0;
     }
     #caption{
         text-align: right;
@@ -59,7 +61,7 @@
     #gallery4{
         grid-area: g4;
         background-image: url('../img/section4/gallery-4.jpg');
-        height: 150px;
+        height: auto;
     }
     #gallery5{
         grid-area: g5;
@@ -83,6 +85,6 @@
     }
     #description{
         grid-area: des;
-        margin: 0 40px;
+        padding:0 40px;
     }
 }

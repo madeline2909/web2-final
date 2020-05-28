@@ -17,8 +17,7 @@
         a:hover,
         a:active {
             color: $green;
-            background-color: $cream;
-            border: $green 1px;
+            background-color: $yellow;
         }
     }
     
@@ -51,14 +50,15 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             li{
-                font-size: 50px;
+                font-size: 55px;
             }
         }
         
         #paypal{
             display: flex;
             justify-content: center;
-            padding: 8px 60px;
+            padding: 5px 70px;
+            margin: 0 100px 15px;
             color: $white;
             border-radius: 100px;
             background-color: $blue;

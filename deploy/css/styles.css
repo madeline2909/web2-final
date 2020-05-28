@@ -437,8 +437,8 @@ h1 > span {
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 2.25rem;
-  line-height: 1.75rem;
+  font-size: 2.5rem;
+  line-height: 2.0625rem;
   font-weight: 800;
 }
 h3 > span {
@@ -585,11 +585,16 @@ textarea {
 /* =============
     Navigation
 ============= */
+@media (min-width: 992px) {
+  #nav-container {
+    margin: auto;
+  }
+}
 #nav-container ul {
   height: 100%;
   text-align: right;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #nav-container ul {
     display: flex;
     justify-content: flex-end;
@@ -598,22 +603,11 @@ textarea {
 #nav-container ul li {
   margin-bottom: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #nav-container ul li {
     align-items: center;
     display: flex;
-    margin: 0px 30px 0 0;
-  }
-  #nav-container ul li a:link,
-#nav-container ul li a:visited {
-    color: #F9F6EF;
-    font-size: 1.25rem;
-    text-decoration: none;
-    transition: 0.25s;
-  }
-  #nav-container ul li a:hover,
-#nav-container ul li a:active {
-    color: #EFC861;
+    margin: auto;
   }
 }
 #nav-container ul li a:link,
@@ -638,25 +632,56 @@ header {
   top: 0;
   width: 100%;
 }
+@media (min-width: 768px) {
+  header {
+    background-color: unset;
+  }
+}
+header img {
+  height: 25px;
+}
+@media (min-width: 768px) {
+  header img {
+    height: 30px;
+  }
+}
+@media (min-width: 992px) {
+  header img {
+    height: 40px;
+  }
+}
 header > div {
   display: grid;
-  grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 80% auto;
+  grid-template-areas: "logo . burger" "nav nav nav";
+  grid-template-columns: 65% auto 20%;
+}
+@media (min-width: 768px) {
+  header > div {
+    grid-template-areas: "logo nav";
+    grid-template-columns: 12% auto;
+  }
 }
 @media (min-width: 992px) {
   header > div {
-    grid-template-areas: "logo nav";
-    grid-template-columns: 20% auto;
+    grid-template-areas: "logo nav .";
+    grid-template-columns: 10% auto 10%;
   }
 }
 header > div #logo-container {
   grid-area: logo;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
 }
-header > div #logo-container h1 {
+header > div #logo-container #title h1 {
   font-style: normal;
+}
+@media (min-width: 768px) {
+  header > div #logo-container #title {
+    display: none;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+  }
 }
 header > div #burger-container {
   grid-area: burger;
@@ -665,7 +690,7 @@ header > div #burger-container {
   justify-content: flex-end;
   padding: 20px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header > div #burger-container {
     display: none !important;
   }
@@ -679,10 +704,17 @@ header > div #nav-container {
   grid-area: nav;
   padding: 20px;
 }
+@media (min-width: 768px) {
+  header > div #nav-container {
+    display: block !important;
+    height: 75px;
+    padding: 0 15px;
+  }
+}
 @media (min-width: 992px) {
   header > div #nav-container {
-    background-color: rgba(62, 57, 28, 0.5);
-    display: block !important;
+    width: 705px;
+    height: 95px;
   }
 }
 
@@ -806,6 +838,9 @@ footer h5 {
 #section-2 #section-2-container #section-2-content1 h1 {
   padding-left: 40px;
 }
+#section-2 #section-2-container #section-2-content1 #section-2-article1 {
+  position: relative;
+}
 #section-2 #section-2-container #section-2-content1 #section-2-article1 h2 {
   margin: 0 15px;
 }
@@ -815,10 +850,16 @@ footer h5 {
   padding: 23px 25px 23px 15px;
   color: #F9F6EF;
 }
-#section-2 #section-2-container #section-2-content1 #section-2-article1 h3 {
-  margin: 0 15px;
+#section-2 #section-2-container #section-2-content1 #section-2-article1 #date {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+#section-2 #section-2-container #section-2-content1 #section-2-article1 #date h3 {
   text-align: right;
+  color: #F9F6EF;
   position: absolute;
+  bottom: 140px;
 }
 #section-2 #section-2-container #section-2-content1 #section-2-rectangle1 {
   height: 100px;
@@ -949,9 +990,9 @@ footer h5 {
 }
 #section-4 ul {
   display: grid;
-  grid-template-columns: 15px repeat(2, 1fr) 15px;
-  grid-template-areas: ". cap g1 ." "g6 g6 g4 ." "g6 g6 g5 ." ". g3 g3 ." ". g7 g7 ." ". des des ." ". g8 g8 .";
-  row-gap: 10px;
+  grid-template-columns: 3% 1fr 3% 1fr 3%;
+  grid-template-areas: ". . . g1 ." ". cap . g1 ." ". cap . g4 ." "g6 g6 . g4 ." "g6 g6 . g5 ." ". g3 g3 g3 ." ". g7 g7 g7 ." ". des des des ." ". g8 g8 g8 .";
+  grid-gap: 10px 0;
 }
 #section-4 #caption {
   text-align: right;
@@ -979,7 +1020,7 @@ footer h5 {
 #section-4 #gallery4 {
   grid-area: g4;
   background-image: url("../img/section4/gallery-4.jpg");
-  height: 150px;
+  height: auto;
 }
 #section-4 #gallery5 {
   grid-area: g5;
@@ -1003,7 +1044,7 @@ footer h5 {
 }
 #section-4 #description {
   grid-area: des;
-  margin: 0 40px;
+  padding: 0 40px;
 }
 
 /* =============
@@ -1119,8 +1160,7 @@ footer h5 {
 #section-6 .button a:hover,
 #section-6 .button a:active {
   color: #736B3D;
-  background-color: #F9F6EF;
-  border: #736B3D 1px;
+  background-color: #EFC861;
 }
 
 /* =============
@@ -1139,8 +1179,7 @@ footer h5 {
 #section-7 .button a:hover,
 #section-7 .button a:active {
   color: #736B3D;
-  background-color: #F9F6EF;
-  border: #736B3D 1px;
+  background-color: #EFC861;
 }
 #section-7 #section-7-news {
   background-color: #D5A128;
@@ -1172,12 +1211,13 @@ footer h5 {
   flex-wrap: wrap;
 }
 #section-7 #section-7-donate ul li {
-  font-size: 50px;
+  font-size: 55px;
 }
 #section-7 #section-7-donate #paypal {
   display: flex;
   justify-content: center;
-  padding: 8px 60px;
+  padding: 5px 70px;
+  margin: 0 100px 15px;
   color: #fff;
   border-radius: 100px;
   background-color: #63817C;
