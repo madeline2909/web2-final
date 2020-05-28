@@ -27,7 +27,9 @@
         background-size: cover;
         background-size: 130%;
         height: 200px;
-        
+        @include md{
+            height: 300px;
+        }
     }
     
 }

@@ -568,11 +568,22 @@ h3 > span {
   font-style: italic;
   font-weight: 800;
 }
+@media (min-width: 768px) {
+  #section-5-container > section h2 {
+    font-size: 1.5625rem;
+  }
+}
 #section-5-container > section p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+  #section-5-container > section p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
 }
 
 #section-6-container p {
@@ -1252,7 +1263,13 @@ footer h5 {
   background-size: 190%;
   height: auto;
 }
+@media (min-width: 768px) {
+  #section-4 {
+    background-size: 140%;
+  }
+}
 #section-4 #section-4-container {
+  position: relative;
   background-image: url("../img/section4/hero4-2.png");
   background-position: right;
   background-size: cover;
@@ -1271,9 +1288,24 @@ footer h5 {
   grid-template-areas: ". . . g1 ." ". cap . g1 ." ". cap . g4 ." "g6 g6 . g4 ." "g6 g6 . g5 ." ". g3 g3 g3 ." ". g7 g7 g7 ." ". des des des ." ". g8 g8 g8 .";
   grid-gap: 10px 0;
 }
+@media (min-width: 768px) {
+  #section-4 ul {
+    grid-template-columns: 40% 1fr 1fr 12%;
+    grid-template-areas: "cap g1 g2 ." "g6 g4 g5 ." "g3 g7 g7 g7" "g8 g8 des des";
+    row-gap: 22px;
+    column-gap: 22px;
+  }
+}
 #section-4 #caption {
   text-align: right;
   grid-area: cap;
+}
+@media (min-width: 768px) {
+  #section-4 #caption {
+    display: flex;
+    justify-self: right;
+    align-items: flex-end;
+  }
 }
 #section-4 .section-4-img {
   background-position: center;
@@ -1284,44 +1316,117 @@ footer h5 {
   background-image: url("../img/section4/gallery-1.jpg");
   height: 150px;
 }
+@media (min-width: 768px) {
+  #section-4 #gallery1 {
+    height: 155px;
+  }
+}
 #section-4 #gallery2 {
   grid-area: g2;
   background-image: url("../img/section4/gallery-2.jpg");
   height: 150px;
+}
+@media (min-width: 768px) {
+  #section-4 #gallery2 {
+    height: 155px;
+  }
 }
 #section-4 #gallery3 {
   grid-area: g3;
   background-image: url("../img/section4/gallery-3.jpg");
   height: 150px;
 }
+@media (min-width: 768px) {
+  #section-4 #gallery3 {
+    height: 255px;
+  }
+}
 #section-4 #gallery4 {
   grid-area: g4;
   background-image: url("../img/section4/gallery-4.jpg");
   height: auto;
+}
+@media (min-width: 768px) {
+  #section-4 #gallery4 {
+    height: 155px;
+  }
 }
 #section-4 #gallery5 {
   grid-area: g5;
   background-image: url("../img/section4/gallery-5.jpg");
   height: 150px;
 }
+@media (min-width: 768px) {
+  #section-4 #gallery5 {
+    height: 155px;
+  }
+}
 #section-4 #gallery6 {
   grid-area: g6;
   background-image: url("../img/section4/gallery-6.jpeg");
   height: 255px;
+}
+@media (min-width: 768px) {
+  #section-4 #gallery6 {
+    height: 155px;
+  }
 }
 #section-4 #gallery7 {
   grid-area: g7;
   background-image: url("../img/section4/gallery-7.jpg");
   height: 150px;
 }
+@media (min-width: 768px) {
+  #section-4 #gallery7 {
+    margin-right: 3%;
+    height: 255px;
+  }
+}
 #section-4 #gallery8 {
   grid-area: g8;
   background-image: url("../img/section4/gallery-8.jpg");
   height: 150px;
 }
+@media (min-width: 768px) {
+  #section-4 #gallery8 {
+    display: flex;
+    justify-self: right;
+    height: 255px;
+    width: 80%;
+    margin-left: 12%;
+  }
+}
 #section-4 #description {
   grid-area: des;
   padding: 0 40px;
+}
+@media (min-width: 768px) {
+  #section-4 #description {
+    padding: 0;
+    padding-right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #section-4 #date1 {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+  }
+  #section-4 #date1 h3 {
+    position: absolute;
+    top: 140px;
+  }
+}
+@media (min-width: 768px) {
+  #section-4 #date2 {
+    text-align: right;
+    margin-right: 3%;
+  }
+  #section-4 #date2 h3 {
+    position: absolute;
+    bottom: 150px;
+  }
 }
 
 /* =============
@@ -1353,6 +1458,11 @@ footer h5 {
   background-size: 130%;
   height: 200px;
 }
+@media (min-width: 768px) {
+  #section-5 #section-5-content1 {
+    height: 300px;
+  }
+}
 
 /* =============
     Section 6
@@ -1362,46 +1472,79 @@ footer h5 {
 }
 #section-6 #section-6-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: "c1 c1 c1" ". b1 ." ". c2 ." ". b2 ." ". c3 .";
+  grid-template-columns: 3% auto 3%;
+  grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 .";
 }
-#section-6 #section-6-container > section {
+@media (min-width: 768px) {
+  #section-6 #section-6-container {
+    grid-template-columns: 10% auto 35% 10%;
+    grid-template-areas: "c1 c1 c1 c1" ". c3 c2 .";
+  }
+}
+#section-6 #section-6-container #section-6-content2 {
   grid-area: c2;
 }
-#section-6 #section-6-container #email {
+#section-6 #section-6-container #section-6-content2 #email {
   margin: 30px auto 15px;
   width: 156px;
-  grid-area: b1;
 }
-#section-6 #section-6-container > ul {
+@media (min-width: 768px) {
+  #section-6 #section-6-container #section-6-content2 #email {
+    margin: 42px 0 29px;
+  }
+}
+@media (min-width: 768px) {
+  #section-6 #section-6-container #section-6-content2 #email-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#section-6 #section-6-container #section-6-content2 #detail {
+  text-align: center;
+  margin: 0 80px;
+}
+@media (min-width: 768px) {
+  #section-6 #section-6-container #section-6-content2 #detail {
+    text-align: right;
+    margin: 0 0 0 80px;
+  }
+}
+#section-6 #section-6-container #section-6-content3 {
   grid-area: c3;
+}
+#section-6 #section-6-container #section-6-content3 ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 30px;
 }
-#section-6 #section-6-container > ul li {
+#section-6 #section-6-container #section-6-content3 ul li {
   background-position: center;
   background-size: cover;
   border-radius: 100%;
+  height: 140px;
+  width: 140px;
 }
-#section-6 #section-6-container #report {
-  margin: 30px 0 20px;
-  grid-area: b2;
+@media (min-width: 768px) {
+  #section-6 #section-6-container #section-6-content3 ul li {
+    height: 134px;
+    width: 134px;
+  }
 }
-#section-6 #section-6-container #detail {
-  text-align: center;
-  margin: 0 70px;
-}
-#section-6 #profile1 {
+#section-6 #section-6-container #section-6-content3 ul #profile1 {
   background-image: url("../img/section6/portrait-1.jpg");
-  height: 140px;
-  width: 140px;
 }
-#section-6 #profile2 {
+#section-6 #section-6-container #section-6-content3 ul #profile2 {
   background-image: url("../img/section6/portrait-2.jpg");
-  height: 140px;
-  width: 140px;
+}
+#section-6 #section-6-container #section-6-content3 #report {
+  margin: 30px 0 20px;
+}
+@media (min-width: 768px) {
+  #section-6 #section-6-container #section-6-content3 #report {
+    max-width: 350px;
+    margin: 42px 0 28px;
+  }
 }
 #section-6 #section-6-content1 {
   grid-area: c1;
@@ -1416,6 +1559,8 @@ footer h5 {
 @media (min-width: 768px) {
   #section-6 #section-6-content1 {
     background-color: white;
+    background-size: 100%;
+    height: 300px;
   }
 }
 #section-6 .button a:link,
