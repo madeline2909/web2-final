@@ -31,4 +31,7 @@ ul{
 .content-spacing{
     padding-top: 38px;
     padding-bottom: 38px;
+    @include md{
+        padding: 40px 106px;
+    }
 }

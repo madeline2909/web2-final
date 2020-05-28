@@ -12,7 +12,20 @@
         ". a2 ."
         ". i2 ."
         ". i3 .";
-
+        @include md{
+            background-image: url('../img/section2/hero2.jpg');
+            background-position: top center;
+            background-size: cover;
+            height: auto;
+            column-gap: 22px;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+            "c1 c1"
+            "i3 a2"
+            "i1 a2"
+            "i1 i2";
+            padding-bottom: 40px;
+        }
         aside{
             background-position: center;
             background-size: cover;
@@ -22,13 +35,21 @@
             grid-area: i1;
             background-image: url('../img/section2/about-1.jpg');
             height: 330px;
-            
+            @include md{
+                margin-left: 3%;
+                height: 390px;
+            }
         }
         #section-2-img2{
             grid-area: i2;
             background-image: url('../img/section2/about-2.jpg');
             height: 170px;
             margin-bottom: 15px;
+            @include md{
+                margin-bottom: 0;
+                margin-right: 3%;
+                height: 200px;
+            }
         }
         #section-2-img3{
             grid-area: i3;
@@ -37,6 +58,12 @@
             background-size: 200%;
             height: 170px;
             margin-bottom: 26px;
+            @include md{
+                margin-left: 3%;
+                background-size: 150%;
+                background-position: -100px -60px;
+                height: 290px;
+            }
         }
 
         #section-2-article2{
@@ -44,6 +71,10 @@
             >p{
                 color: $greenbrown;
                 padding: 23px 0;
+                @include md{
+                    color: $cream;
+                    padding: 150px 66px 0 20px;
+                }
             }
         }
         #section-2-content1{
@@ -53,22 +84,50 @@
             background-position: top center;
             background-size: cover;
             height: auto;
+            @include md{
+                background-image: none;
+            }
         
             h1{
-                padding-left:40px;
+                padding-left: 40px;
+                @include md{
+                    padding-left: 106px;
+                }
             }
             #section-2-article1{
                 position: relative;
+                @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    column-gap: 22px;
+                    grid-template-areas:
+                    "h2 h2"
+                    ". date"
+                    ". rec2"
+                    "p .";
+                }
                 h2{
+                    grid-area: h2;
                     margin: 0 15px;
+                    @include md{
+                        margin: 0;
+                        padding-bottom: 10px;
+                    }
                 }
                 >p{
                     border-top: solid white 1px;
                     background-color: rgba(151, 143, 79, .49);
                     padding: 23px 25px 23px 15px;
                     color: $cream;
+                    @include md{
+                        grid-area: p;
+                        border: unset;
+                        background-color: unset;
+                        padding: 0 0 22px 106px;
+                    }
                 }
                 #date{
+                    grid-area: date;
                     display: flex;
                     justify-content: flex-end;
                     padding-right: 15px;
@@ -76,7 +135,14 @@
                     text-align: right;
                     color: $cream;
                     position: absolute;
+                    z-index: 1;
                     bottom: 140px;
+                    }
+                    @include md{
+                        padding-right: 106px;
+                        h3{
+                            bottom: 103px;
+                        }
                     }
                 }
             }
@@ -85,11 +151,24 @@
                 margin: 0 40px;
                 border: solid white 1px;
                 background-color: rgba(255, 255, 255, .18);
+                @include md{
+                    height: 160px;
+                    width: 555px;
+                    margin: auto;
+                }
             }
-    
-            
-            
+            #section-2-rectangle2{
+            position: absolute;
+            grid-area: rec2;
+            height: 300px;
+            width: 100%;
+            border: solid white 1px;
+            border-right: none;
+            background-color: rgba(151, 143, 79, .49);
+            }
+
         }
+        
     }
 }
     
