@@ -848,8 +848,9 @@ footer h5 {
 @media (min-width: 768px) {
   #section-2 #section-2-container {
     background-image: url("../img/section2/hero2.jpg");
-    background-position: top center;
-    background-size: cover;
+    background-position: center;
+    background-position: -100px -370px;
+    background-size: 180%;
     height: auto;
     column-gap: 22px;
     grid-template-columns: 50% auto;
