@@ -5,16 +5,24 @@
     background-color: $cream;
     #section-3-container{
         display: grid;
-        grid-template-columns: 15px auto 15px;
+        grid-template-columns: 3% auto 3%;
         grid-template-areas:
         "c1 c1 c1"
         ". c2 ."
         ". c3 ."
         ". c4 .";
+        @include md{
+            grid-template-areas:
+            "c1 c1 c1"
+            ". c2 ."
+            ". c3 ."
+            ". c4 c4";
+            
+        }
     }
     #section-3-content1{
+        position: relative;
         grid-area: c1;
-
         background-color: rgba($greenbrown, $alpha: 0.2);
         background-blend-mode: multiply;
         background-image: url('../img/section3/hero3.jpg');
@@ -22,31 +30,54 @@
         background-size: cover;
         height: auto;
         @include md{
-            background-color: white;
+            background-image: unset;
+            background-color: unset;
         }
-        h1{
-            padding-left:40px;
+        >h1{
+            @include md{
+                background-image: url('../img/section3/hero3.jpg');
+                background-position: center;
+                background-size: cover;
+                height: 300px;
+            }
         }
-        h2{
-            color: $yellow;
-            padding-left: 40px;
-            width: 60%;
-            padding-top: 81px;
-            #let-our{
-                @include lg{
+        #section-3-intro{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 3%;
+            h2{
+                position: absolute;
+                bottom: 215px;
+                color: $yellow;
+                padding-left: 40px;
+                width: 60%;
+                padding-top: 81px;
+                @include md{
+                    text-align: right;
+                    width: 250px;
+                }
+                #let-our{
+                    @include lg{
+                        color: $cream;
+                    }
+                }
+                #voices{
                     color: $cream;
-                }
-            }
-            #voices{
-                color: $cream;
-                @include lg{
-                    color: $yellow;
+                    @include lg{
+                        color: $yellow;
+                    }
                 }
             }
         }
+
         p{
             padding: 20px 15px 30px;
             text-align: right;
+            @include md{
+                text-align: left;
+                margin: 40px 0 34px 48px;
+                width: 66%;
+            }
         }
         
     }
@@ -57,29 +88,99 @@
     }
     .title{
         padding-top: 22px;
+        @include md{
+            padding: 0;
+        }
     }
     #section-3-content2{
         grid-area: c2;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            row-gap: 22px;
+            grid-template-areas: 
+            "t2 i1"
+            "t2 i2";
+            
+        }
+        p{
+            @include md{
+                margin: 22px 0;
+            }
+        }
         #section-3-img1{
             background-image: url('../img/section3/mission-1.jpg');
+            @include md{
+                height: 230px;
+                grid-area: i1;
+            }
         }
         #section-3-img2{
             background-image: url('../img/section3/mission-3.jpg');
             margin: 20px 0 15px;
+            @include md{
+                margin: 0 0 22px 0;
+                height: 300px;
+                grid-area: i2;
+            }
+        }
+        #section-3-t2{
+            @include md{
+                margin-right: 22px;
+                text-align: right;
+                grid-area: t2;
+            }
         }
     }
     #section-3-content3{
         grid-area: c3;
+        @include md{
+            display: grid;
+            row-gap: 22px;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "i3 t3 "
+            "i4 t3";
+        }
+        p{
+            @include md{
+                margin: 22px 0;
+            }
+        }
         #section-3-img3{
             background-image: url('../img/section3/mission-2.jpg');
-           
+            @include md{
+
+                margin-right: 22px;
+                height: 216px;
+                grid-area: i3;
+            }
         }
         #section-3-img4{
             background-image: url('../img/section3/mission-4.jpeg');
+            @include md{
+
+                margin-right: 22px;
+                background-position: top;
+                height: 240px;
+                grid-area: i4;
+            }
+        }
+        #section-3-t3{
+            @include md{
+                grid-area: t3;
+            }
         }
     }
     #section-3-content4{
         grid-area: c4;
+        @include md{
+            margin-left: 80px;
+            display: grid;
+            grid-template-columns: 72% auto;
+            column-gap: 22px;
+            grid-template-areas: "t4 i5";
+        }
         #section-3-img5{
             background-image: url('../img/section3/mission-5.jpg');
             background-position: -20px -20px;
@@ -87,10 +188,26 @@
             height: 240px;
             width: 240px;
             margin: 30px auto 15px auto;
+            @include md{
+                width: 100%;
+                margin: 50px 0 0 0;
+                grid-area: i5;
+                height: 340px;
+                background-position: -100px 0;
+                background-size: cover;
+            }
+        }
+        #section-3-t4{
+            @include md{
+                grid-area: t4;
+            }
         }
         h2{
             text-align: center;
             margin: 0 10px;
+            @include md{
+                margin-top: 36px;
+            }
         }
         p{
             margin: 10px 0 30px 0;

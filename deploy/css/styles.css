@@ -389,6 +389,7 @@ ul li {
 
 .content-spacing {
   padding-top: 38px;
+  padding-left: 40px;
   padding-bottom: 38px;
 }
 @media (min-width: 768px) {
@@ -474,12 +475,25 @@ h3 > span {
   line-height: 2.375rem;
   font-weight: 700;
 }
-#section-3-intro > p {
+@media (min-width: 768px) {
+  #section-3-intro > h2 {
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
+  }
+}
+
+#section-3-content1 p {
   font-family: "Playfair Display", serif;
   font-size: 1.125rem;
   line-height: 1.625rem;
   font-weight: 600;
   color: #F9F6EF;
+}
+@media (min-width: 768px) {
+  #section-3-content1 p {
+    color: #3E391C;
+    line-height: 1.8125rem;
+  }
 }
 
 .section-3-mission {
@@ -494,17 +508,27 @@ h3 > span {
   font-weight: 700;
   font-style: italic;
 }
+@media (min-width: 768px) {
+  .section-3-mission .title {
+    color: #D5A128;
+  }
+}
 .section-3-mission .bold {
   font-weight: 600;
 }
 
-#section-3-content4 > h2 {
+#section-3-content4 h2 {
   font-family: "Playfair Display", serif;
   font-size: 1.375rem;
   line-height: 1.6875rem;
   font-weight: 600;
   font-style: italic;
   color: #63817C;
+}
+@media (min-width: 768px) {
+  #section-3-content4 h2 {
+    font-size: 1.25rem;
+  }
 }
 #section-3-content4 p {
   font-family: "Raleway", sans-serif;
@@ -818,7 +842,7 @@ footer h5 {
 }
 #section-2 #section-2-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 3% auto 3%;
   grid-template-areas: "c1 c1 c1" "i1 i1 i1" ". a2 ." ". i2 ." ". i3 .";
 }
 @media (min-width: 768px) {
@@ -997,10 +1021,16 @@ footer h5 {
 }
 #section-3 #section-3-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
+  grid-template-columns: 3% auto 3%;
   grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 ." ". c4 .";
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-container {
+    grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 ." ". c4 c4";
+  }
+}
 #section-3 #section-3-content1 {
+  position: relative;
   grid-area: c1;
   background-color: rgba(62, 57, 28, 0.2);
   background-blend-mode: multiply;
@@ -1011,34 +1041,60 @@ footer h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content1 {
-    background-color: white;
+    background-image: unset;
+    background-color: unset;
   }
 }
-#section-3 #section-3-content1 h1 {
-  padding-left: 40px;
+@media (min-width: 768px) {
+  #section-3 #section-3-content1 > h1 {
+    background-image: url("../img/section3/hero3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+  }
 }
-#section-3 #section-3-content1 h2 {
+#section-3 #section-3-content1 #section-3-intro {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+#section-3 #section-3-content1 #section-3-intro h2 {
+  position: absolute;
+  bottom: 215px;
   color: #EFC861;
   padding-left: 40px;
   width: 60%;
   padding-top: 81px;
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content1 #section-3-intro h2 {
+    text-align: right;
+    width: 250px;
+  }
+}
 @media (min-width: 992px) {
-  #section-3 #section-3-content1 h2 #let-our {
+  #section-3 #section-3-content1 #section-3-intro h2 #let-our {
     color: #F9F6EF;
   }
 }
-#section-3 #section-3-content1 h2 #voices {
+#section-3 #section-3-content1 #section-3-intro h2 #voices {
   color: #F9F6EF;
 }
 @media (min-width: 992px) {
-  #section-3 #section-3-content1 h2 #voices {
+  #section-3 #section-3-content1 #section-3-intro h2 #voices {
     color: #EFC861;
   }
 }
 #section-3 #section-3-content1 p {
   padding: 20px 15px 30px;
   text-align: right;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content1 p {
+    text-align: left;
+    margin: 40px 0 34px 48px;
+    width: 66%;
+  }
 }
 #section-3 aside {
   background-position: center;
@@ -1048,27 +1104,107 @@ footer h5 {
 #section-3 .title {
   padding-top: 22px;
 }
+@media (min-width: 768px) {
+  #section-3 .title {
+    padding: 0;
+  }
+}
 #section-3 #section-3-content2 {
   grid-area: c2;
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content2 {
+    display: grid;
+    grid-template-columns: 50% auto;
+    row-gap: 22px;
+    grid-template-areas: "t2 i1" "t2 i2";
+  }
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content2 p {
+    margin: 22px 0;
+  }
+}
 #section-3 #section-3-content2 #section-3-img1 {
   background-image: url("../img/section3/mission-1.jpg");
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content2 #section-3-img1 {
+    height: 230px;
+    grid-area: i1;
+  }
 }
 #section-3 #section-3-content2 #section-3-img2 {
   background-image: url("../img/section3/mission-3.jpg");
   margin: 20px 0 15px;
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content2 #section-3-img2 {
+    margin: 0 0 22px 0;
+    height: 300px;
+    grid-area: i2;
+  }
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content2 #section-3-t2 {
+    margin-right: 22px;
+    text-align: right;
+    grid-area: t2;
+  }
+}
 #section-3 #section-3-content3 {
   grid-area: c3;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content3 {
+    display: grid;
+    row-gap: 22px;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "i3 t3 " "i4 t3";
+  }
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content3 p {
+    margin: 22px 0;
+  }
 }
 #section-3 #section-3-content3 #section-3-img3 {
   background-image: url("../img/section3/mission-2.jpg");
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content3 #section-3-img3 {
+    margin-right: 22px;
+    height: 216px;
+    grid-area: i3;
+  }
+}
 #section-3 #section-3-content3 #section-3-img4 {
   background-image: url("../img/section3/mission-4.jpeg");
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content3 #section-3-img4 {
+    margin-right: 22px;
+    background-position: top;
+    height: 240px;
+    grid-area: i4;
+  }
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content3 #section-3-t3 {
+    grid-area: t3;
+  }
+}
 #section-3 #section-3-content4 {
   grid-area: c4;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content4 {
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 72% auto;
+    column-gap: 22px;
+    grid-template-areas: "t4 i5";
+  }
 }
 #section-3 #section-3-content4 #section-3-img5 {
   background-image: url("../img/section3/mission-5.jpg");
@@ -1078,9 +1214,29 @@ footer h5 {
   width: 240px;
   margin: 30px auto 15px auto;
 }
+@media (min-width: 768px) {
+  #section-3 #section-3-content4 #section-3-img5 {
+    width: 100%;
+    margin: 50px 0 0 0;
+    grid-area: i5;
+    height: 340px;
+    background-position: -100px 0;
+    background-size: cover;
+  }
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content4 #section-3-t4 {
+    grid-area: t4;
+  }
+}
 #section-3 #section-3-content4 h2 {
   text-align: center;
   margin: 0 10px;
+}
+@media (min-width: 768px) {
+  #section-3 #section-3-content4 h2 {
+    margin-top: 36px;
+  }
 }
 #section-3 #section-3-content4 p {
   margin: 10px 0 30px 0;
@@ -1102,7 +1258,6 @@ footer h5 {
   height: auto;
 }
 #section-4 #section-4-container h1 {
-  padding-left: 40px;
   margin-bottom: 60px;
   color: #EFC861;
 }
@@ -1197,9 +1352,6 @@ footer h5 {
   background-size: 130%;
   height: 200px;
 }
-#section-5 #section-5-content1 h1 {
-  padding-left: 40px;
-}
 
 /* =============
     Section 6
@@ -1264,9 +1416,6 @@ footer h5 {
   #section-6 #section-6-content1 {
     background-color: white;
   }
-}
-#section-6 #section-6-content1 h1 {
-  padding-left: 40px;
 }
 #section-6 .button a:link,
 #section-6 .button a:visited {
