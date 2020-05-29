@@ -5,12 +5,31 @@
 footer{
     background-image: url('../img/footer/footer.jpg');
     background-position: center;
-    background-size: cover;
     height: 333px;
     background-size: 200%;
     background-position: -50px -70px;
-    #footer-tabs{
+    position: relative;
+    @include md{
+        height: 400px;
+        background-position: 0px -80px;
+        background-size: cover;
+    }
+    #footer-container{
+
         padding-top: 33px;
+        @include md{
+            display: grid;
+            grid-template-columns: 10% auto 50% 10%;
+            grid-template-areas: ". icons tabs .";
+        }
+       
+    }
+
+    #footer-tabs{
+        @include md{
+            grid-area: tabs;
+            border-top: solid white 1px;
+        }
         li{
             text-align: right;
             margin: 18px;
@@ -18,11 +37,15 @@ footer{
         
     }
     #footer-icons{
-        padding-top: 33px;
-        display: flex;
         position: absolute;
+        display: flex;
         justify-content: space-evenly;
         width: 60%;
+        @include md{
+            position: static;
+            grid-area: icons;
+            width: unset;
+        }
         li{
             font-size: 35px;
             a:link,
@@ -38,12 +61,23 @@ footer{
             }
         }
     }
-    h5{
-        margin: 0 25px;
-        border-right: solid white 1px;
+    #copyright{
+        height: auto;
         display: flex;
-        height: 35%;
+        justify-content: center;
+        h5{
+        display: flex;
         justify-content: center;
         align-items: flex-end;
+        height: 90px;
+        border-right: solid white 1px;
+        width: 90%;
+        position: absolute;
+        bottom: 30px;
+        @include md{
+            border-right: unset;
+        }
+        }
     }
+    
 }

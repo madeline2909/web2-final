@@ -23,9 +23,10 @@
     h3{
         color: $cream;
     }
-    ul{
+    #allgallery{
         display: grid;
         grid-template-columns: 3% 1fr 3% 1fr 3%;
+        
         grid-template-areas: 
         ". . . g1 ."
         ". cap . g1 ."
@@ -36,7 +37,7 @@
         ". g7 g7 g7 ."
         ". des des des ."
         ". g8 g8 g8 .";
-        grid-gap: 10px 0;
+        row-gap: 10px;
         @include md{
             grid-template-columns: 40% 1fr 1fr 12%;
             grid-template-areas: 
@@ -159,12 +160,37 @@
     #date2{
         @include md{
             text-align: right;
-            margin-right: 3%;
+            margin-left: 3%;
             h3{
                 position: absolute;
-                bottom: 150px;
+                bottom: 420px;
             }
         }
 
+    }
+    #video{
+        display: grid;
+        grid-template-columns: 3% auto 3%;
+        grid-template-areas: 
+        ". v1 ."
+        ". v2 .";
+        row-gap: 10px;
+        @include md{
+            margin: 0 20px;
+            grid-template-columns: 50%;
+            grid-template-areas: 
+            "v1 v2";
+            column-gap: 20px;
+            padding: 212px 0 40px;
+        }
+        li{
+            width: 100%;
+        }
+        #v1{
+            grid-area: v1;
+        }
+        #v2{
+            grid-area: v2;
+        }
     }
 }

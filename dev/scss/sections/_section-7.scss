@@ -2,6 +2,7 @@
     Section 7
 ============= */
 #section-7{
+    
     .button{
         a:link,
         a:visited {
@@ -24,33 +25,108 @@
     #section-7-news{
         background-color: $veryyellow;
         height: auto;
+        @include md{
+            display: grid;
+            grid-template-columns: 10% 50% 3% auto 10%;
+            grid-template-areas: 
+            ". follow . . ."
+            ". email . news .";
+            padding-bottom: 60px;
+        }
+        #section-7-follow{
+            @include md{
+                grid-area: follow;
+                width: 90%;
+                padding-top: 49px;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    font-size: 30px;
+                    @include md{
+                        a:link,
+                        a:visited {
+                            color: $cream;
+                            text-decoration: none;
+                            transition: 0.25s;
+                        }
+                
+                        a:hover,
+                        a:active {
+                            color: $greenbrown;
+                        }
+                    }
+                }
+            }
+        }
         #email-container{
             padding: 30px 15px;
+            @include md{
+                grid-area: email;
+                padding: 0;
+                padding-top: 30px;
+            }
             h5{
                 padding: 10px;
                 background-color: $cream;
+                @include md{
+                    padding: 20px;
+                }
             }
         }
         #news{
             margin: 0 74px;
             padding-bottom: 30px;
+            min-width: 174px;
+            @include md{
+                margin: 0;
+                margin-top: 20px;
+                padding:0;
+                grid-area: news;
+            }
         }
         
     }
     #section-7-donate{
         background-color: $cream;
         height: auto;
+        @include md{
+            height: 140px;
+            display: flex;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 10% 30% 3% auto 10%;
+            grid-template-areas: 
+            ". donate . icons .";
+        }
         #donate{
+            max-width: 235px;
             margin: 0 74px;
             padding-top: 30px;
+            @include md{
+                margin: 0;
+                padding: unset;
+                grid-area: donate;
+            }
         }
         ul{
             padding: 25px 0 30px;
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
             flex-wrap: wrap;
+            @include md{
+                padding: unset;
+                grid-area: icons;
+                justify-content: space-between;
+            }
             li{
                 font-size: 55px;
+                @include md{
+                    font-size: 40px;
+                }
             }
         }
         
@@ -62,6 +138,10 @@
             color: $white;
             border-radius: 100px;
             background-color: $blue;
+            @include md{
+                padding: 5px 45px;
+                margin: 0;
+            }
         }
         
     }
