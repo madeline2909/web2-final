@@ -30,6 +30,11 @@
         @include md{
             height: 300px;
         }
+        h1{
+            @include xl{
+                grid-area: lg;
+            }
+        }
     }
     
 }

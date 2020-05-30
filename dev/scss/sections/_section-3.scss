@@ -33,26 +33,33 @@
             background-image: unset;
             background-color: unset;
         }
-        >h1{
+        .xl-grid{
             @include md{
                 background-image: url('../img/section3/hero3.jpg');
                 background-position: center;
                 background-size: cover;
                 height: 300px;
             }
+            h1{
+                @include xl{
+                    grid-area: lg;
+                }
+            }
         }
         #section-3-intro{
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 3%;
+            @include md{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 3%;
+            }
             h2{
-                position: absolute;
                 bottom: 215px;
                 color: $yellow;
                 padding-left: 40px;
                 width: 60%;
                 padding-top: 81px;
                 @include md{
+                    position: absolute;
                     text-align: right;
                     width: 250px;
                 }

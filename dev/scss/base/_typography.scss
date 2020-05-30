@@ -39,6 +39,10 @@ h1{
             font-size: rem-calc(33);
             line-height: rem-calc(42);
         }
+        @include lg{
+            font-size: rem-calc(39);
+            line-height: rem-calc(52);
+        }
     }
     p{
         font-family: 'Raleway', sans-serif;
@@ -61,6 +65,10 @@ h3{
     @include md{
         font-size: rem-calc(53);
         line-height: rem-calc(42);
+    }
+    @include lg{
+        font-size: rem-calc(72);
+        line-height: rem-calc(64);
     }
 }
 #section-3-intro{

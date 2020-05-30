@@ -14,12 +14,17 @@ footer{
         background-position: 0px -80px;
         background-size: cover;
     }
+    >div{
+        @include xl{
+            grid-area: lg;
+        }
+    }
     #footer-container{
 
         padding-top: 33px;
         @include md{
             display: grid;
-            grid-template-columns: 10% auto 50% 10%;
+            grid-template-columns: 7% auto 50% 7%;
             grid-template-areas: ". icons tabs .";
         }
        
@@ -28,7 +33,6 @@ footer{
     #footer-tabs{
         @include md{
             grid-area: tabs;
-            border-top: solid white 1px;
         }
         li{
             text-align: right;
@@ -75,7 +79,11 @@ footer{
         position: absolute;
         bottom: 30px;
         @include md{
-            border-right: unset;
+            width: 78%;
+            height: 150px;
+        }
+        @include lg{
+            height: 170px;
         }
         }
     }

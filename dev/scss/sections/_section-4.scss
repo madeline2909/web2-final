@@ -18,6 +18,9 @@
         h1{
             margin-bottom: 60px;
             color: $yellow;
+            @include xl{
+                grid-area: lg;
+            }
         }
     }
     h3{
