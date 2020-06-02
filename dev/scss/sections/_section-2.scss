@@ -44,6 +44,9 @@
             "rec3 rec3 rec3 a2 a2 ."
             "rec3 rec3 rec3 i2 i3 .";
         }
+        @include xl{
+            grid-template-columns: auto repeat(4, 275px) auto;
+        }
         h1{
             margin: 0;
         }
@@ -150,14 +153,14 @@
                 
                 h2{
                     grid-area: h2;
-                    margin: 0 15px;
+                    padding: 38px 15px;
                     @include md{
-                        margin: 0;
-                        padding-bottom: 10px;
+                        padding: 40px 106px 10px;
                     }
                     @include lg{
                         padding: 55px 0 10px;
                     }
+                    
                 }
                 >p{
                     border-top: solid white 1px;
@@ -262,12 +265,13 @@
             padding: 23px 0;
             @include md{
                 color: $cream;
-                padding: 150px 66px 0 20px;
+                padding: 160px 60px 0 20px;
             }
             @include lg{
                 padding: 180px 0 60px 15%;
             }
             @include xl{
+                padding-top: 200px;
                 padding-right: 19%;
             }
         }

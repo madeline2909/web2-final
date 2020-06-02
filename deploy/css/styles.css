@@ -399,13 +399,11 @@ ul li {
 }
 @media (min-width: 992px) {
   .content-spacing {
-    padding: 55px 8%;
-    margin-left: 22px;
+    padding: 55px 85px;
   }
 }
 @media (min-width: 1200px) {
   .content-spacing {
-    padding: 55px 10%;
     margin-left: 20px;
   }
 }
@@ -1016,6 +1014,11 @@ footer #copyright h5 {
     grid-template-areas: ". c1 c1 c1 c1 ." ". i1 i1 a2 a2 ." "rec3 rec3 rec3 a2 a2 ." "rec3 rec3 rec3 i2 i3 .";
   }
 }
+@media (min-width: 1200px) {
+  #section-2 #section-2-container {
+    grid-template-columns: auto repeat(4, 275px) auto;
+  }
+}
 #section-2 #section-2-container h1 {
   margin: 0;
 }
@@ -1136,12 +1139,11 @@ footer #copyright h5 {
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 h2 {
   grid-area: h2;
-  margin: 0 15px;
+  padding: 38px 15px;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-content1 #section-2-article1 h2 {
-    margin: 0;
-    padding-bottom: 10px;
+    padding: 40px 106px 10px;
   }
 }
 @media (min-width: 992px) {
@@ -1269,7 +1271,7 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-2 #section-2-article2 > p {
     color: #F9F6EF;
-    padding: 150px 66px 0 20px;
+    padding: 160px 60px 0 20px;
   }
 }
 @media (min-width: 992px) {
@@ -1279,6 +1281,7 @@ footer #copyright h5 {
 }
 @media (min-width: 1200px) {
   #section-2 #section-2-article2 > p {
+    padding-top: 200px;
     padding-right: 19%;
   }
 }
@@ -1568,6 +1571,7 @@ footer #copyright h5 {
 #section-4 #allgallery {
   display: grid;
   grid-template-columns: 3% 1fr 3% 1fr 3%;
+  grid-template-rows: repeat(2, 75px) 60px 90px 150px repeat(4, 170px);
   grid-template-areas: ". . . g1 ." ". cap . g1 ." ". cap . g4 ." "g6 g6 . g4 ." "g6 g6 . g5 ." ". g3 g3 g3 ." ". g7 g7 g7 ." ". des des des ." ". g8 g8 g8 .";
   row-gap: 10px;
 }
@@ -1597,7 +1601,7 @@ footer #copyright h5 {
 #section-4 #gallery1 {
   grid-area: g1;
   background-image: url("../img/section4/gallery-1.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery1 {
@@ -1607,7 +1611,7 @@ footer #copyright h5 {
 #section-4 #gallery2 {
   grid-area: g2;
   background-image: url("../img/section4/gallery-2.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery2 {
@@ -1617,7 +1621,7 @@ footer #copyright h5 {
 #section-4 #gallery3 {
   grid-area: g3;
   background-image: url("../img/section4/gallery-3.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery3 {
@@ -1637,7 +1641,7 @@ footer #copyright h5 {
 #section-4 #gallery5 {
   grid-area: g5;
   background-image: url("../img/section4/gallery-5.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery5 {
@@ -1647,7 +1651,7 @@ footer #copyright h5 {
 #section-4 #gallery6 {
   grid-area: g6;
   background-image: url("../img/section4/gallery-6.jpeg");
-  height: 255px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery6 {
@@ -1657,7 +1661,7 @@ footer #copyright h5 {
 #section-4 #gallery7 {
   grid-area: g7;
   background-image: url("../img/section4/gallery-7.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery7 {
@@ -1668,7 +1672,7 @@ footer #copyright h5 {
 #section-4 #gallery8 {
   grid-area: g8;
   background-image: url("../img/section4/gallery-8.jpg");
-  height: 150px;
+  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery8 {
@@ -1680,8 +1684,10 @@ footer #copyright h5 {
   }
 }
 #section-4 #description {
+  display: flex;
+  align-items: center;
   grid-area: des;
-  padding: 0 40px;
+  padding: 0 50px;
 }
 @media (min-width: 768px) {
   #section-4 #description {
@@ -1716,6 +1722,7 @@ footer #copyright h5 {
   grid-template-columns: 3% auto 3%;
   grid-template-areas: ". v1 ." ". v2 .";
   row-gap: 10px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   #section-4 #video {

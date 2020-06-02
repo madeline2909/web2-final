@@ -36,11 +36,9 @@ ul{
         padding: 40px 106px;
     }
     @include lg{
-        padding: 55px 8%;
-        margin-left: 22px;
+        padding: 55px 85px;
     }
     @include xl{
-        padding: 55px 10%;
         margin-left: 20px;
     }
 }

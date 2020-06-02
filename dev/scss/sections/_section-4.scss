@@ -27,6 +27,10 @@
     #allgallery{
         display: grid;
         grid-template-columns: 3% 1fr 3% 1fr 3%;
+        grid-template-rows:
+        repeat(2,75px)
+        60px 90px 150px
+        repeat(4,170px);
         
         grid-template-areas: 
         ". . . g1 ."
@@ -54,7 +58,6 @@
         text-align: right;
         grid-area: cap;
         @include md{
-
             display: flex;
             justify-self: right;
             align-items: flex-end;
@@ -67,16 +70,15 @@
     #gallery1{
         grid-area: g1;
         background-image: url('../img/section4/gallery-1.jpg');
-        height: 150px;
+        height: auto;
         @include md{
-            
             height: 155px;
         }
     }
     #gallery2{
         grid-area: g2;
         background-image: url('../img/section4/gallery-2.jpg');
-        height: 150px;
+        height: auto;
         @include md{
             height: 155px;
         }
@@ -84,7 +86,7 @@
     #gallery3{
         grid-area: g3;
         background-image: url('../img/section4/gallery-3.jpg');
-        height: 150px;
+        height: auto;
         @include md{
             height: 255px;
         }
@@ -101,7 +103,7 @@
     #gallery5{
         grid-area: g5;
         background-image: url('../img/section4/gallery-5.jpg');
-        height: 150px;
+        height: auto;
         @include md{
             height: 155px;
         }
@@ -109,7 +111,7 @@
     #gallery6{
         grid-area: g6;
         background-image: url('../img/section4/gallery-6.jpeg');
-        height: 255px;
+        height: auto;
         @include md{
             height: 155px;
         }
@@ -117,7 +119,7 @@
     #gallery7{
         grid-area: g7;
         background-image: url('../img/section4/gallery-7.jpg');
-        height: 150px;
+        height: auto;
         @include md{
              
             margin-right: 3%;
@@ -127,7 +129,7 @@
     #gallery8{
         grid-area: g8;
         background-image: url('../img/section4/gallery-8.jpg');
-        height: 150px;
+        height: auto;
         @include md{
             display: flex;
             justify-self: right;
@@ -137,8 +139,10 @@
         }
     }
     #description{
+        display: flex;
+        align-items: center;
         grid-area: des;
-        padding:0 40px;
+        padding:0 50px;
         @include md{
             
             padding: 0;
@@ -176,6 +180,7 @@
         ". v1 ."
         ". v2 .";
         row-gap: 10px;
+        padding-bottom: 30px;
         @include md{
             margin: 0 20px;
             grid-template-columns: 50%;
