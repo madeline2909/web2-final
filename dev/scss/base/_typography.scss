@@ -40,7 +40,11 @@ h1{
             line-height: rem-calc(42);
         }
         @include lg{
-            font-size: rem-calc(39);
+            font-size: rem-calc(36);
+            line-height: rem-calc(52);
+        }
+        @include xl{
+            font-size: rem-calc(42);
             line-height: rem-calc(52);
         }
     }

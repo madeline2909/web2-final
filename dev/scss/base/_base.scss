@@ -39,10 +39,10 @@ ul{
         padding: 55px 8%;
     }
 }
-.xl-grid{
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". lg .";               
-    }
-}
+// .xl-grid{
+//     @include xl{
+//         display: grid;
+//         grid-template-columns: auto 1200px auto;
+//         grid-template-areas: ". lg .";               
+//     }
+// }

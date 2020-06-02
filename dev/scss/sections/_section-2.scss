@@ -33,26 +33,22 @@
             column-gap: 22px;
         }
         @include lg{
-            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: 20px;
+            grid-template-columns: 8% repeat(4, 1fr) 8%;
             grid-template-areas:
-            "c1 c1 c1"
-            "i1 a2 a2"
-            "rec3 a2 a2"
-            "rec3 i2 i3";
+            ". c1 c1 c1 c1 ."
+            ". i1 i1 a2 a2 ."
+            "rec3 rec3 rec3 a2 a2 ."
+            "rec3 rec3 rec3 i2 i3 .";
         }
         @include xl{
-            
         }
-        h1{
-            @include xl{
-                grid-area: lg;
-            }
-        }
+        
         aside{
             background-position: center;
             background-size: cover;
         }
-        
+       
         #section-2-img1{
             grid-area: i1;
             background-image: url('../img/section2/about-1.jpg');
@@ -62,7 +58,7 @@
                 height: 390px;
             }
             @include lg{
-                
+                margin: 0;
             }
         }
         #section-2-img2{
@@ -94,24 +90,14 @@
                 height: 290px;
             }
             @include lg{
+                background-size: cover;
+                background-position: center;
                 height: 213px;
                 margin: unset;
             }
         }
-
-        #section-2-article2{
-            grid-area: a2;
-            >p{
-                color: $greenbrown;
-                padding: 23px 0;
-                @include md{
-                    color: $cream;
-                    padding: 150px 66px 0 20px;
-                }
-                @include lg{
-                }
-            }
-        }
+        
+        
         #section-2-content1{
             grid-area: c1;
 
@@ -122,8 +108,23 @@
             @include md{
                 background-image: none;
             }
-        
-           
+            @include xl{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 3% auto 3%;
+                grid-template-areas: 
+                ". h1 ."
+                " rec1 rec1 rec1"
+                ". a1 .";
+            }
+            h1{
+                @include lg{
+                    padding: 55px 0;
+                }
+                @include xl{
+                    grid-area: h1;
+                }
+            }
             #section-2-article1{
                 position: relative;
                 @include md{
@@ -136,6 +137,13 @@
                     ". rec2"
                     "p .";
                 }
+                @include lg{
+                    column-gap: 20px;
+                    grid-template-columns: 49% auto;
+                }
+                @include xl{
+                    grid-area: a1;
+                }
                 
                 h2{
                     grid-area: h2;
@@ -143,6 +151,9 @@
                     @include md{
                         margin: 0;
                         padding-bottom: 10px;
+                    }
+                    @include lg{
+                        padding: 55px 0 10px;
                     }
                 }
                 >p{
@@ -155,6 +166,10 @@
                         border: unset;
                         background-color: unset;
                         padding: 0 0 22px 106px;
+                    }
+                    @include lg{
+                        width: 80%;
+                        padding: 0 0 60px;
                     }
                 }
                 #date{
@@ -175,8 +190,20 @@
                             bottom: 103px;
                         }
                     }
+                    @include lg{
+                        padding: 0px;
+                        h3{
+                            bottom: 0px;
+                        }
+                    }
+                    @include xl{
+                        h3{
+                            bottom: -20px;
+                        }
+                    }
                 }
             }
+            
             #section-2-rectangle1{
                 height: 100px;
                 margin: 0 40px;
@@ -188,9 +215,13 @@
                     margin: auto;
                 }
                 @include lg{
-                    margin: auto;
                     height: 278px;
-                    width: 1004px;
+                    margin: 0;
+                    width: auto;
+                }
+                @include xl{
+                    grid-area: rec1;
+                    width: auto;
                 }
             }
             #section-2-rectangle2{
@@ -203,21 +234,40 @@
                 background-color: rgba(151, 143, 79, .49);
                 @include lg{
                     border-right: solid white 1px;
-                    width: 406px;
+                    width: 82%;
+                }
+                @include xl{
+                    width: 85%;
                 }
             }
         }
         #section-2-rectangle3{
             @include lg{
+                background-color: rgba(255, 255, 255, .18);
+                margin-top: 20px;
                 border: solid white 1px;
                 width: 100%;
                 border-left: unset;
                 grid-area: rec3;
             }
         }
-
-        
-        
+    }
+    #section-2-article2{
+        grid-area: a2;
+        >p{
+            color: $greenbrown;
+            padding: 23px 0;
+            @include md{
+                color: $cream;
+                padding: 150px 66px 0 20px;
+            }
+            @include lg{
+                padding: 180px 0 60px 15%;
+            }
+            @include xl{
+                padding-right: 19%;
+            }
+        }
     }
 }
     
