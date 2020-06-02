@@ -37,12 +37,17 @@ ul{
     }
     @include lg{
         padding: 55px 8%;
+        margin-left: 22px;
+    }
+    @include xl{
+        padding: 55px 10%;
+        margin-left: 20px;
     }
 }
-// .xl-grid{
-//     @include xl{
-//         display: grid;
-//         grid-template-columns: auto 1200px auto;
-//         grid-template-areas: ". lg .";               
-//     }
-// }
+.xl-grid{
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". lg .";               
+    }
+}

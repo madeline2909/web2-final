@@ -10,7 +10,10 @@
         background-position: -100px -370px;
         background-size: 180%;
         height: auto;
-
+    }
+    @include xl{
+        background-size: 120%;
+        background-position: 0 -350px;
     }
     #section-2-container{
         display: grid;
@@ -41,9 +44,9 @@
             "rec3 rec3 rec3 a2 a2 ."
             "rec3 rec3 rec3 i2 i3 .";
         }
-        @include xl{
+        h1{
+            margin: 0;
         }
-        
         aside{
             background-position: center;
             background-size: cover;

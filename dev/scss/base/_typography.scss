@@ -85,6 +85,10 @@ h3{
             font-size: rem-calc(50);
         line-height: rem-calc(45);
         }
+        @include lg{
+            font-size: rem-calc(72);
+            line-height: rem-calc(70);
+        }
     }
 }
 #section-3-content1{
@@ -130,6 +134,9 @@ h3{
         color: $blue;
         @include md{
             font-size: rem-calc(20);
+        }
+        @include lg{
+            font-size: rem-calc(23);
         }
     }
     p{

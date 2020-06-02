@@ -17,7 +17,14 @@
             ". c2 ."
             ". c3 ."
             ". c4 c4";
-            
+        }
+        @include lg{
+            grid-template-columns: 8% repeat(2, 1fr) 8%;
+            grid-template-areas: 
+            "c1 c1 c1 c1"
+            ". c2 c3 ."
+            ". c4 c4 c4";
+            grid-gap: 20px;
         }
     }
     #section-3-content1{
@@ -33,17 +40,16 @@
             background-image: unset;
             background-color: unset;
         }
-        .xl-grid{
+        .header{
             @include md{
                 background-image: url('../img/section3/hero3.jpg');
                 background-position: center;
                 background-size: cover;
                 height: 300px;
             }
-            h1{
-                @include xl{
-                    grid-area: lg;
-                }
+            @include lg{
+                height: 500px;
+                background-position: 0 -90px;
             }
         }
         #section-3-intro{
@@ -51,6 +57,9 @@
                 display: flex;
                 justify-content: flex-end;
                 margin-right: 3%;
+            }
+            @include xl{
+                grid-area: lg;
             }
             h2{
                 bottom: 215px;
@@ -84,6 +93,9 @@
                 text-align: left;
                 margin: 40px 0 34px 48px;
                 width: 66%;
+            }
+            @include xl{
+                grid-area: lg;
             }
         }
         

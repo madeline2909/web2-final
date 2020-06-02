@@ -19,7 +19,11 @@
         @include xl{
             grid-area: lg;
         }
-        
+        h1{
+            @include xl{
+                padding-left: 8%;
+            }
+        }
         #section-6-content2{
 
             grid-area: c2;
