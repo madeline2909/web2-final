@@ -4,6 +4,8 @@
 
 footer{
     background-image: url('../img/footer/footer.jpg');
+    background-color: rgba($earthy, $alpha: 0.4);
+    background-blend-mode: soft-light;
     background-position: center;
     height: 333px;
     background-size: 200%;
@@ -13,6 +15,9 @@ footer{
         height: 400px;
         background-position: 0px -80px;
         background-size: cover;
+    }
+    @include lg{
+        background-position: center;
     }
     >div{
         @include xl{
@@ -25,7 +30,8 @@ footer{
         @include md{
             display: grid;
             grid-template-columns: 7% auto 50% 7%;
-            grid-template-areas: ". icons tabs .";
+            grid-template-areas: ". icons tabs ."
+            ". cp cp .";
         }
        
     }
@@ -66,25 +72,26 @@ footer{
         }
     }
     #copyright{
-        height: auto;
         display: flex;
         justify-content: center;
         h5{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        height: 90px;
-        border-right: solid white 1px;
-        width: 90%;
-        position: absolute;
-        bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 120px;
+            border-right: solid white 1px;
+            width: 100%;
+            margin-right: 5%;
+            @include md{
+                height: 180px;
+            }
+            @include lg{
+                margin-right: 2%;
+                height: 170px;
+            }
+        }
         @include md{
-            width: 78%;
-            height: 150px;
-        }
-        @include lg{
-            height: 170px;
-        }
+            grid-area: cp;
         }
     }
     

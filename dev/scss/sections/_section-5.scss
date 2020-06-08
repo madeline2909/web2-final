@@ -14,9 +14,15 @@
             text-align: center;
             h2{
                 margin-top: 24px;
+                @include lg{
+                    margin-top: 60px;
+                }
             }
             p{
                 margin: 10px 10px 30px;
+                @include lg{
+                    margin: 23px 0 60px;
+                }
             }
         }
     }
@@ -34,6 +40,9 @@
         height: 200px;
         @include md{
             height: 300px;
+        }
+        @include lg{
+            height: 500px;
         }
         
     }

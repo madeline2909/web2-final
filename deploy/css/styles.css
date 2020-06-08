@@ -620,6 +620,11 @@ h3 > span {
     font-size: 1.5625rem;
   }
 }
+@media (min-width: 992px) {
+  #section-5-container > section h2 {
+    font-size: 1.9375rem;
+  }
+}
 #section-5-container > section p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
@@ -656,7 +661,7 @@ h3 > span {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #D5A128;
+  color: #D0B37B;
 }
 #section-7 h4 {
   font-family: "Raleway", sans-serif;
@@ -861,6 +866,8 @@ header > div #nav-container {
 ============= */
 footer {
   background-image: url("../img/footer/footer.jpg");
+  background-color: rgba(208, 179, 123, 0.4);
+  background-blend-mode: soft-light;
   background-position: center;
   height: 333px;
   background-size: 200%;
@@ -872,6 +879,11 @@ footer {
     height: 400px;
     background-position: 0px -80px;
     background-size: cover;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    background-position: center;
   }
 }
 @media (min-width: 1200px) {
@@ -886,7 +898,7 @@ footer #footer-container {
   footer #footer-container {
     display: grid;
     grid-template-columns: 7% auto 50% 7%;
-    grid-template-areas: ". icons tabs .";
+    grid-template-areas: ". icons tabs ." ". cp cp .";
   }
 }
 @media (min-width: 768px) {
@@ -925,7 +937,6 @@ footer #footer-icons li a:active {
   color: #3E391C;
 }
 footer #copyright {
-  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -933,21 +944,25 @@ footer #copyright h5 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 90px;
+  height: 120px;
   border-right: solid white 1px;
-  width: 90%;
-  position: absolute;
-  bottom: 30px;
+  width: 100%;
+  margin-right: 5%;
 }
 @media (min-width: 768px) {
   footer #copyright h5 {
-    width: 78%;
-    height: 150px;
+    height: 180px;
   }
 }
 @media (min-width: 992px) {
   footer #copyright h5 {
+    margin-right: 2%;
     height: 170px;
+  }
+}
+@media (min-width: 768px) {
+  footer #copyright {
+    grid-area: cp;
   }
 }
 
@@ -1921,8 +1936,18 @@ footer #copyright h5 {
 #section-5 #section-5-container > section h2 {
   margin-top: 24px;
 }
+@media (min-width: 992px) {
+  #section-5 #section-5-container > section h2 {
+    margin-top: 60px;
+  }
+}
 #section-5 #section-5-container > section p {
   margin: 10px 10px 30px;
+}
+@media (min-width: 992px) {
+  #section-5 #section-5-container > section p {
+    margin: 23px 0 60px;
+  }
 }
 @media (min-width: 1200px) {
   #section-5 h1 {
@@ -1940,6 +1965,11 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-5 #section-5-content1 {
     height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  #section-5 #section-5-content1 {
+    height: 500px;
   }
 }
 
@@ -1982,6 +2012,11 @@ footer #copyright h5 {
     margin: 42px 0 29px;
   }
 }
+@media (min-width: 992px) {
+  #section-6 #section-6-container #section-6-content2 #email {
+    margin: 60px 0 28px;
+  }
+}
 @media (min-width: 768px) {
   #section-6 #section-6-container #section-6-content2 #button-container {
     display: flex;
@@ -2007,6 +2042,13 @@ footer #copyright h5 {
   align-items: center;
   padding-bottom: 30px;
 }
+@media (min-width: 992px) {
+  #section-6 #section-6-container #section-6-content3 ul {
+    justify-content: space-between;
+    width: 60%;
+    padding-bottom: 59px;
+  }
+}
 #section-6 #section-6-container #section-6-content3 ul li {
   background-position: center;
   background-size: cover;
@@ -2026,13 +2068,17 @@ footer #copyright h5 {
 #section-6 #section-6-container #section-6-content3 ul #profile2 {
   background-image: url("../img/section6/portrait-2.jpg");
 }
-#section-6 #section-6-container #section-6-content3 #report {
-  margin: 30px 0 20px;
-}
 @media (min-width: 768px) {
   #section-6 #section-6-container #section-6-content3 #report {
     max-width: 350px;
     margin: 42px 0 28px;
+  }
+}
+@media (min-width: 992px) {
+  #section-6 #section-6-container #section-6-content3 #report {
+    margin: 60px 0 28px;
+    width: 100%;
+    max-width: 550px;
   }
 }
 #section-6 #section-6-content1 {
@@ -2050,6 +2096,11 @@ footer #copyright h5 {
     background-color: white;
     background-size: 100%;
     height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  #section-6 #section-6-content1 {
+    height: 500px;
   }
 }
 #section-6 .button a:link,
@@ -2090,7 +2141,7 @@ footer #copyright h5 {
   background-color: #EFC861;
 }
 #section-7 #section-7-news {
-  background-color: #D5A128;
+  background-color: #D0B37B;
   height: auto;
 }
 @media (min-width: 768px) {
@@ -2217,12 +2268,13 @@ footer #copyright h5 {
   }
 }
 #section-7 #section-7-donate #donate {
-  max-width: 235px;
+  min-width: 235px;
   margin: 0 74px;
   padding-top: 30px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate #donate {
+    max-width: 235px;
     margin: 0;
     padding: unset;
     grid-area: donate;
@@ -2257,7 +2309,7 @@ footer #copyright h5 {
   margin: 0 100px 15px;
   color: #fff;
   border-radius: 100px;
-  background-color: #63817C;
+  background-color: #000;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate #paypal {

@@ -23,7 +23,7 @@
     }
     
     #section-7-news{
-        background-color: $veryyellow;
+        background-color: $earthy;
         height: auto;
         #news-container{
             @include md{
@@ -139,10 +139,11 @@
             grid-area: lg;
         }
         #donate{
-            max-width: 235px;
+            min-width: 235px;
             margin: 0 74px;
             padding-top: 30px;
             @include md{
+                max-width: 235px;
                 margin: 0;
                 padding: unset;
                 grid-area: donate;
@@ -174,7 +175,7 @@
             margin: 0 100px 15px;
             color: $white;
             border-radius: 100px;
-            background-color: $blue;
+            background-color: $black;
             @include md{
                 padding: 5px 45px;
                 margin: 0;
