@@ -1377,7 +1377,7 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content1 #section-3-intro h2 {
-    bottom: 60px;
+    bottom: 120px;
     text-align: left;
     padding: 0;
     width: 362px;
@@ -1421,7 +1421,7 @@ footer #copyright h5 {
 @media (min-width: 992px) {
   #section-3 #section-3-intropara p {
     text-align: right;
-    padding: 54px 86px 0 0;
+    padding: 54px 86px 62px 0;
     width: 522px;
   }
 }
