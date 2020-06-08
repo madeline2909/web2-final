@@ -51,6 +51,11 @@
                 height: 500px;
                 background-position: 0 -90px;
             }
+            h1{
+                @include xl{
+                grid-area: lg;
+                }
+            }
         }
         #section-3-intro{
             @include md{
@@ -58,11 +63,13 @@
                 justify-content: flex-end;
                 margin-right: 3%;
             }
+            @include lg{
+                display: block;
+            }
             @include xl{
                 grid-area: lg;
             }
             h2{
-                bottom: 215px;
                 color: $yellow;
                 padding-left: 40px;
                 width: 60%;
@@ -71,6 +78,13 @@
                     position: absolute;
                     text-align: right;
                     width: 250px;
+                    bottom: 175px;
+                }
+                @include lg{
+                    bottom: 60px;
+                    text-align: left;
+                    padding: 0;
+                    width: 362px;
                 }
                 #let-our{
                     @include lg{
@@ -85,25 +99,39 @@
                 }
             }
         }
-
+        
+    }
+    #section-3-intropara{
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+        }
+        @include xl{
+            grid-area: lg;
+        }
         p{
             padding: 20px 15px 30px;
             text-align: right;
             @include md{
                 text-align: left;
-                margin: 40px 0 34px 48px;
+                padding: 46px 0 34px 48px;
                 width: 66%;
             }
-            @include xl{
-                grid-area: lg;
+            @include lg{
+                text-align: right;
+                padding: 54px 86px 0 0;
+                width: 522px;
             }
+            
         }
-        
     }
     aside{
         background-position: center;
         background-size: cover;
         height: 165px;
+        @include md{
+            height: auto;
+        }
     }
     .title{
         padding-top: 22px;
@@ -111,16 +139,28 @@
             padding: 0;
         }
     }
+    .missionbottom{
+        @include lg{
+            margin-top: 70px;
+        }
+    }
     #section-3-content2{
         grid-area: c2;
         @include md{
             display: grid;
             grid-template-columns: 50% auto;
+            grid-template-rows: 195px auto;
             row-gap: 22px;
             grid-template-areas: 
             "t2 i1"
             "t2 i2";
-            
+        }
+        @include lg{
+            grid-template-rows: 260px auto;
+            grid-template-areas: 
+            "i1 t2"
+            "i2 t2";
+            column-gap: 20px;
         }
         p{
             @include md{
@@ -130,7 +170,6 @@
         #section-3-img1{
             background-image: url('../img/section3/mission-1.jpg');
             @include md{
-                height: 230px;
                 grid-area: i1;
             }
         }
@@ -139,8 +178,10 @@
             margin: 20px 0 15px;
             @include md{
                 margin: 0 0 22px 0;
-                height: 300px;
                 grid-area: i2;
+            }
+            @include lg{
+                margin: 0;
             }
         }
         #section-3-t2{
@@ -149,17 +190,25 @@
                 text-align: right;
                 grid-area: t2;
             }
+            @include lg{
+                text-align: left;
+                margin-right: 0;
+            }
         }
     }
     #section-3-content3{
         grid-area: c3;
         @include md{
             display: grid;
-            row-gap: 22px;
+            grid-gap: 22px;
             grid-template-columns: 50% auto;
+            grid-template-rows: 216px auto;
             grid-template-areas: 
             "i3 t3 "
             "i4 t3";
+        }
+        @include lg{
+            grid-template-rows: 310px auto;
         }
         p{
             @include md{
@@ -169,20 +218,22 @@
         #section-3-img3{
             background-image: url('../img/section3/mission-2.jpg');
             @include md{
-
                 margin-right: 22px;
-                height: 216px;
                 grid-area: i3;
+            }
+            @include lg{
+                margin: 0;
             }
         }
         #section-3-img4{
             background-image: url('../img/section3/mission-4.jpeg');
             @include md{
-
                 margin-right: 22px;
                 background-position: top;
-                height: 240px;
                 grid-area: i4;
+            }
+            @include lg{
+                margin: 0;
             }
         }
         #section-3-t3{
@@ -194,11 +245,15 @@
     #section-3-content4{
         grid-area: c4;
         @include md{
-            margin-left: 80px;
+            margin: 50px 0 37px 80px;
             display: grid;
             grid-template-columns: 72% auto;
             column-gap: 22px;
             grid-template-areas: "t4 i5";
+        }
+        @include lg{
+            margin: 60px 0 58px 85px;
+            grid-template-columns: 50% auto;
         }
         #section-3-img5{
             background-image: url('../img/section3/mission-5.jpg');
@@ -209,11 +264,14 @@
             margin: 30px auto 15px auto;
             @include md{
                 width: 100%;
-                margin: 50px 0 0 0;
                 grid-area: i5;
-                height: 340px;
+                height: auto;
                 background-position: -100px 0;
                 background-size: cover;
+                margin: 0;
+            }
+            @include lg{
+                background-position: center;
             }
         }
         #section-3-t4{
@@ -225,11 +283,16 @@
             text-align: center;
             margin: 0 10px;
             @include md{
-                margin-top: 36px;
+
+                text-align: left;
+                margin: 0;
             }
         }
         p{
-            margin: 10px 0 30px 0;
+            margin: 10px 0 0 0;
+            @include lg{
+                margin: 20px 0 0 0;
+            }
         }
     }
    

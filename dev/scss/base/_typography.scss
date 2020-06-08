@@ -83,7 +83,7 @@ h3{
         font-weight: 700;
         @include md{
             font-size: rem-calc(50);
-        line-height: rem-calc(45);
+            line-height: rem-calc(45);
         }
         @include lg{
             font-size: rem-calc(72);

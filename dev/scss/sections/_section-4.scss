@@ -7,7 +7,8 @@
     background-size: 190%;
     height: auto;
     @include md{
-        background-size: 140%;
+        background-size: 100%;
+        background-position: 0 0;
     }
     #section-4-container{
         position: relative;
@@ -18,7 +19,9 @@
         h1{
             margin-bottom: 60px;
             color: $yellow;
-            
+            @include xl{
+                grid-area: lg;
+            }
         }
     }
     h3{
@@ -31,7 +34,6 @@
         repeat(2,75px)
         60px 90px 150px
         repeat(4,170px);
-        
         grid-template-areas: 
         ". . . g1 ."
         ". cap . g1 ."
@@ -45,6 +47,7 @@
         row-gap: 10px;
         @include md{
             grid-template-columns: 40% 1fr 1fr 12%;
+            grid-template-rows: repeat(2,153px) repeat(2,253px);
             grid-template-areas: 
             "cap g1 g2 ."
             "g6 g4 g5 ."
@@ -89,6 +92,8 @@
         height: auto;
         @include md{
             height: 255px;
+            background-size: 220%;
+            background-position: -180px -150px;
         }
     }
     #gallery4{
@@ -96,7 +101,6 @@
         background-image: url('../img/section4/gallery-4.jpg');
         height: auto;
         @include md{
-            
             height: 155px;
         }
     }
@@ -113,6 +117,7 @@
         background-image: url('../img/section4/gallery-6.jpeg');
         height: auto;
         @include md{
+            background-position: 0 -90px;
             height: 155px;
         }
     }
@@ -121,7 +126,6 @@
         background-image: url('../img/section4/gallery-7.jpg');
         height: auto;
         @include md{
-             
             margin-right: 3%;
             height: 255px;
         }

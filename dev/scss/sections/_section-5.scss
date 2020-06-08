@@ -20,6 +20,11 @@
             }
         }
     }
+    h1{
+        @include xl{
+            grid-area: lg;
+        }
+    }
     #section-5-content1{
         grid-area: c1;
         background-image: url('../img/section5/hero5.jpg');
