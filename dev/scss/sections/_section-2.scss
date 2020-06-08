@@ -179,6 +179,7 @@
                     }
                 }
                 #date{
+                    z-index: 1;
                     grid-area: date;
                     display: flex;
                     justify-content: flex-end;
@@ -187,7 +188,6 @@
                     text-align: right;
                     color: $cream;
                     position: absolute;
-                    z-index: 1;
                     bottom: 140px;
                     }
                     @include md{

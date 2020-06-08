@@ -769,6 +769,7 @@ textarea {
     Header
 ============= */
 header {
+  z-index: 2;
   background-color: rgba(62, 57, 28, 0.5);
   left: 0;
   position: fixed;
@@ -821,9 +822,8 @@ header > div #logo-container #title h1 {
 }
 @media (min-width: 768px) {
   header > div #logo-container #title {
-    display: none;
-    transform: rotate(-90deg);
-    transform-origin: left top 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 }
 header > div #burger-container {
@@ -866,7 +866,7 @@ header > div #nav-container {
 ============= */
 footer {
   background-image: url("../img/footer/footer.jpg");
-  background-color: rgba(208, 179, 123, 0.4);
+  background-color: rgba(208, 179, 123, 0.2);
   background-blend-mode: soft-light;
   background-position: center;
   height: 333px;
@@ -1187,6 +1187,7 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 #date {
+  z-index: 1;
   grid-area: date;
   display: flex;
   justify-content: flex-end;
@@ -1196,7 +1197,6 @@ footer #copyright h5 {
   text-align: right;
   color: #F9F6EF;
   position: absolute;
-  z-index: 1;
   bottom: 140px;
 }
 @media (min-width: 768px) {
@@ -2067,6 +2067,9 @@ footer #copyright h5 {
 }
 #section-6 #section-6-container #section-6-content3 ul #profile2 {
   background-image: url("../img/section6/portrait-2.jpg");
+}
+#section-6 #section-6-container #section-6-content3 #report {
+  margin: 30px 20px 15px;
 }
 @media (min-width: 768px) {
   #section-6 #section-6-container #section-6-content3 #report {

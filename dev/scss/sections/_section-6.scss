@@ -25,7 +25,6 @@
             }
         }
         #section-6-content2{
-
             grid-area: c2;
             #email{
                 margin: 30px auto 15px;
@@ -84,7 +83,7 @@
                 }
             }
             #report{
-                
+                margin: 30px 20px 15px;
                 @include md{
                     max-width: 350px;
                     margin: 42px 0 28px;
