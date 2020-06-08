@@ -8,22 +8,15 @@
         grid-template-columns: 3% auto 3%;
         grid-template-areas:
         "c1 c1 c1"
-        ". c2 ."
-        ". c3 ."
+        ". c ."
         ". c4 .";
         @include md{
             grid-template-areas:
             "c1 c1 c1"
-            ". c2 ."
-            ". c3 ."
+            ". c ."
             ". c4 c4";
         }
         @include lg{
-            grid-template-columns: 8% repeat(2, 1fr) 8%;
-            grid-template-areas: 
-            "c1 c1 c1 c1"
-            ". c2 c3 ."
-            ". c4 c4 c4";
             grid-gap: 20px;
         }
     }
@@ -43,7 +36,7 @@
         .header{
             @include md{
                 background-image: url('../img/section3/hero3.jpg');
-                background-position: center;
+                background-position: 0 -50px;
                 background-size: cover;
                 height: 300px;
             }
@@ -83,8 +76,10 @@
                 @include lg{
                     bottom: 120px;
                     text-align: left;
-                    padding: 0;
                     width: 362px;
+                }
+                @include xl{
+                    padding: 0;
                 }
                 #let-our{
                     @include lg{
@@ -119,8 +114,11 @@
             }
             @include lg{
                 text-align: right;
-                padding: 54px 86px 62px 0;
+                padding: 54px 40px 62px 0;
                 width: 522px;
+            }
+            @include xl{
+                padding: 54px 86px 62px 0;
             }
             
         }
@@ -142,6 +140,16 @@
     .missionbottom{
         @include lg{
             margin-top: 70px;
+        }
+    }
+    #section-3-bigcontent{
+        grid-area: c;
+        @include lg{
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "c2 c3";
         }
     }
     #section-3-content2{
@@ -200,7 +208,7 @@
         grid-area: c3;
         @include md{
             display: grid;
-            grid-gap: 22px;
+            row-gap: 22px;
             grid-template-columns: 50% auto;
             grid-template-rows: 216px auto;
             grid-template-areas: 
@@ -208,6 +216,7 @@
             "i4 t3";
         }
         @include lg{
+            column-gap: 20px;
             grid-template-rows: 310px auto;
         }
         p{
@@ -244,6 +253,7 @@
     }
     #section-3-content4{
         grid-area: c4;
+        margin-bottom: 30px;
         @include md{
             margin: 50px 0 37px 80px;
             display: grid;
@@ -252,7 +262,7 @@
             grid-template-areas: "t4 i5";
         }
         @include lg{
-            margin: 60px 0 58px 85px;
+            margin: 60px 0 58px 8%;
             grid-template-columns: 50% auto;
         }
         #section-3-img5{
@@ -263,7 +273,7 @@
             width: 240px;
             margin: 30px auto 15px auto;
             @include md{
-                width: 100%;
+                width: auto;
                 grid-area: i5;
                 height: auto;
                 background-position: -100px 0;

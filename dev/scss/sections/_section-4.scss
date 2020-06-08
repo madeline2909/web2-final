@@ -16,6 +16,9 @@
         background-position: right;
         background-size: cover;
         height: auto;
+        @include lg{
+            padding-top: 430px;
+        }
         h1{
             margin-bottom: 60px;
             color: $yellow;
@@ -56,6 +59,10 @@
             row-gap: 22px;
             column-gap: 22px;
         }
+        @include lg{
+            margin-top: -300px;
+            grid-template-rows: repeat(4, 241px);
+        }
     }
     #caption{
         text-align: right;
@@ -69,29 +76,20 @@
     .section-4-img{
         background-position: center;
         background-size: cover;
+        height: auto;
     }
     #gallery1{
         grid-area: g1;
         background-image: url('../img/section4/gallery-1.jpg');
-        height: auto;
-        @include md{
-            height: 155px;
-        }
     }
     #gallery2{
         grid-area: g2;
         background-image: url('../img/section4/gallery-2.jpg');
-        height: auto;
-        @include md{
-            height: 155px;
-        }
     }
     #gallery3{
         grid-area: g3;
         background-image: url('../img/section4/gallery-3.jpg');
-        height: auto;
         @include md{
-            height: 255px;
             background-size: 220%;
             background-position: -180px -150px;
         }
@@ -99,45 +97,31 @@
     #gallery4{
         grid-area: g4;
         background-image: url('../img/section4/gallery-4.jpg');
-        height: auto;
-        @include md{
-            height: 155px;
-        }
     }
     #gallery5{
         grid-area: g5;
         background-image: url('../img/section4/gallery-5.jpg');
-        height: auto;
-        @include md{
-            height: 155px;
-        }
     }
     #gallery6{
         grid-area: g6;
         background-image: url('../img/section4/gallery-6.jpeg');
-        height: auto;
         @include md{
             background-position: 0 -90px;
-            height: 155px;
         }
     }
     #gallery7{
         grid-area: g7;
         background-image: url('../img/section4/gallery-7.jpg');
-        height: auto;
         @include md{
             margin-right: 3%;
-            height: 255px;
         }
     }
     #gallery8{
         grid-area: g8;
         background-image: url('../img/section4/gallery-8.jpg');
-        height: auto;
         @include md{
             display: flex;
             justify-self: right;
-            height: 255px;
             width: 80%;
             margin-left: 12%;
         }
@@ -148,7 +132,6 @@
         grid-area: des;
         padding:0 50px;
         @include md{
-            
             padding: 0;
             padding-right: 25px;
         }

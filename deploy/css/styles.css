@@ -1295,17 +1295,15 @@ footer #copyright h5 {
 #section-3 #section-3-container {
   display: grid;
   grid-template-columns: 3% auto 3%;
-  grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 ." ". c4 .";
+  grid-template-areas: "c1 c1 c1" ". c ." ". c4 .";
 }
 @media (min-width: 768px) {
   #section-3 #section-3-container {
-    grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 ." ". c4 c4";
+    grid-template-areas: "c1 c1 c1" ". c ." ". c4 c4";
   }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-container {
-    grid-template-columns: 8% repeat(2, 1fr) 8%;
-    grid-template-areas: "c1 c1 c1 c1" ". c2 c3 ." ". c4 c4 c4";
     grid-gap: 20px;
   }
 }
@@ -1328,7 +1326,7 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-3 #section-3-content1 .header {
     background-image: url("../img/section3/hero3.jpg");
-    background-position: center;
+    background-position: 0 -50px;
     background-size: cover;
     height: 300px;
   }
@@ -1379,8 +1377,12 @@ footer #copyright h5 {
   #section-3 #section-3-content1 #section-3-intro h2 {
     bottom: 120px;
     text-align: left;
-    padding: 0;
     width: 362px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-3 #section-3-content1 #section-3-intro h2 {
+    padding: 0;
   }
 }
 @media (min-width: 992px) {
@@ -1421,8 +1423,13 @@ footer #copyright h5 {
 @media (min-width: 992px) {
   #section-3 #section-3-intropara p {
     text-align: right;
-    padding: 54px 86px 62px 0;
+    padding: 54px 40px 62px 0;
     width: 522px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-3 #section-3-intropara p {
+    padding: 54px 86px 62px 0;
   }
 }
 #section-3 aside {
@@ -1446,6 +1453,18 @@ footer #copyright h5 {
 @media (min-width: 992px) {
   #section-3 .missionbottom {
     margin-top: 70px;
+  }
+}
+#section-3 #section-3-bigcontent {
+  grid-area: c;
+}
+@media (min-width: 992px) {
+  #section-3 #section-3-bigcontent {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "c2 c3";
   }
 }
 #section-3 #section-3-content2 {
@@ -1514,7 +1533,7 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-3 #section-3-content3 {
     display: grid;
-    grid-gap: 22px;
+    row-gap: 22px;
     grid-template-columns: 50% auto;
     grid-template-rows: 216px auto;
     grid-template-areas: "i3 t3 " "i4 t3";
@@ -1522,6 +1541,7 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content3 {
+    column-gap: 20px;
     grid-template-rows: 310px auto;
   }
 }
@@ -1566,6 +1586,7 @@ footer #copyright h5 {
 }
 #section-3 #section-3-content4 {
   grid-area: c4;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content4 {
@@ -1578,7 +1599,7 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content4 {
-    margin: 60px 0 58px 85px;
+    margin: 60px 0 58px 8%;
     grid-template-columns: 50% auto;
   }
 }
@@ -1592,7 +1613,7 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content4 #section-3-img5 {
-    width: 100%;
+    width: auto;
     grid-area: i5;
     height: auto;
     background-position: -100px 0;
@@ -1651,6 +1672,11 @@ footer #copyright h5 {
   background-size: cover;
   height: auto;
 }
+@media (min-width: 992px) {
+  #section-4 #section-4-container {
+    padding-top: 430px;
+  }
+}
 #section-4 #section-4-container h1 {
   margin-bottom: 60px;
   color: #EFC861;
@@ -1679,6 +1705,12 @@ footer #copyright h5 {
     column-gap: 22px;
   }
 }
+@media (min-width: 992px) {
+  #section-4 #allgallery {
+    margin-top: -300px;
+    grid-template-rows: repeat(4, 241px);
+  }
+}
 #section-4 #caption {
   text-align: right;
   grid-area: cap;
@@ -1693,35 +1725,22 @@ footer #copyright h5 {
 #section-4 .section-4-img {
   background-position: center;
   background-size: cover;
+  height: auto;
 }
 #section-4 #gallery1 {
   grid-area: g1;
   background-image: url("../img/section4/gallery-1.jpg");
-  height: auto;
-}
-@media (min-width: 768px) {
-  #section-4 #gallery1 {
-    height: 155px;
-  }
 }
 #section-4 #gallery2 {
   grid-area: g2;
   background-image: url("../img/section4/gallery-2.jpg");
-  height: auto;
-}
-@media (min-width: 768px) {
-  #section-4 #gallery2 {
-    height: 155px;
-  }
 }
 #section-4 #gallery3 {
   grid-area: g3;
   background-image: url("../img/section4/gallery-3.jpg");
-  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery3 {
-    height: 255px;
     background-size: 220%;
     background-position: -180px -150px;
   }
@@ -1729,55 +1748,37 @@ footer #copyright h5 {
 #section-4 #gallery4 {
   grid-area: g4;
   background-image: url("../img/section4/gallery-4.jpg");
-  height: auto;
-}
-@media (min-width: 768px) {
-  #section-4 #gallery4 {
-    height: 155px;
-  }
 }
 #section-4 #gallery5 {
   grid-area: g5;
   background-image: url("../img/section4/gallery-5.jpg");
-  height: auto;
-}
-@media (min-width: 768px) {
-  #section-4 #gallery5 {
-    height: 155px;
-  }
 }
 #section-4 #gallery6 {
   grid-area: g6;
   background-image: url("../img/section4/gallery-6.jpeg");
-  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery6 {
     background-position: 0 -90px;
-    height: 155px;
   }
 }
 #section-4 #gallery7 {
   grid-area: g7;
   background-image: url("../img/section4/gallery-7.jpg");
-  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery7 {
     margin-right: 3%;
-    height: 255px;
   }
 }
 #section-4 #gallery8 {
   grid-area: g8;
   background-image: url("../img/section4/gallery-8.jpg");
-  height: auto;
 }
 @media (min-width: 768px) {
   #section-4 #gallery8 {
     display: flex;
     justify-self: right;
-    height: 255px;
     width: 80%;
     margin-left: 12%;
   }
