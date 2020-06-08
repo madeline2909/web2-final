@@ -1708,7 +1708,14 @@ footer #copyright h5 {
 @media (min-width: 992px) {
   #section-4 #allgallery {
     margin-top: -300px;
+    grid-template-columns: auto repeat(3, 300px) auto;
     grid-template-rows: repeat(4, 241px);
+    grid-template-areas: ". cap g1 g2 ." "g3 g3 g4 g5 ." ". g6 g7 g7 ." ". g6 g8 des .";
+  }
+}
+@media (min-width: 1200px) {
+  #section-4 #allgallery {
+    grid-template-columns: auto repeat(3, 380px) auto;
   }
 }
 #section-4 #caption {
@@ -1745,6 +1752,12 @@ footer #copyright h5 {
     background-position: -180px -150px;
   }
 }
+@media (min-width: 992px) {
+  #section-4 #gallery3 {
+    background-size: cover;
+    background-position: center;
+  }
+}
 #section-4 #gallery4 {
   grid-area: g4;
   background-image: url("../img/section4/gallery-4.jpg");
@@ -1771,6 +1784,11 @@ footer #copyright h5 {
     margin-right: 3%;
   }
 }
+@media (min-width: 992px) {
+  #section-4 #gallery7 {
+    margin: 0;
+  }
+}
 #section-4 #gallery8 {
   grid-area: g8;
   background-image: url("../img/section4/gallery-8.jpg");
@@ -1781,6 +1799,12 @@ footer #copyright h5 {
     justify-self: right;
     width: 80%;
     margin-left: 12%;
+  }
+}
+@media (min-width: 992px) {
+  #section-4 #gallery8 {
+    margin: 0;
+    width: 100%;
   }
 }
 #section-4 #description {
@@ -1795,6 +1819,11 @@ footer #copyright h5 {
     padding-right: 25px;
   }
 }
+@media (min-width: 992px) {
+  #section-4 #description {
+    display: unset;
+  }
+}
 @media (min-width: 768px) {
   #section-4 #date1 {
     text-align: right;
@@ -1802,9 +1831,21 @@ footer #copyright h5 {
     justify-content: flex-end;
     margin-right: 3%;
   }
+}
+@media (min-width: 992px) {
+  #section-4 #date1 {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 768px) {
   #section-4 #date1 h3 {
     position: absolute;
     top: 140px;
+  }
+}
+@media (min-width: 992px) {
+  #section-4 #date1 h3 {
+    top: 190px;
   }
 }
 @media (min-width: 768px) {
@@ -1812,9 +1853,18 @@ footer #copyright h5 {
     text-align: right;
     margin-left: 3%;
   }
+}
+@media (min-width: 768px) {
   #section-4 #date2 h3 {
     position: absolute;
     bottom: 420px;
+  }
+}
+@media (min-width: 992px) {
+  #section-4 #date2 h3 {
+    text-align: left;
+    bottom: 420px;
+    margin-left: 5%;
   }
 }
 #section-4 #video {
@@ -1831,6 +1881,16 @@ footer #copyright h5 {
     grid-template-areas: "v1 v2";
     column-gap: 20px;
     padding: 212px 0 40px;
+  }
+}
+@media (min-width: 992px) {
+  #section-4 #video {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-4 #video {
+    grid-area: lg;
   }
 }
 #section-4 #video li {
