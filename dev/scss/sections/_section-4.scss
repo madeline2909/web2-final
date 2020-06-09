@@ -17,6 +17,8 @@
 		height: auto;
 		position: relative;
 		@include lg {
+			background-position: 0 200px;
+			background-repeat: no-repeat;
 			padding-top: 430px;
 		}
 		h1 {
