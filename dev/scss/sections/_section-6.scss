@@ -1,138 +1,131 @@
 /* =============
     Section 6
 ============= */
-#section-6{
-    background-color: $cream;
-    #section-6-container{
-        display: grid;
-        grid-template-columns: 3% auto 3%;
-        grid-template-areas:
-        "c1 c1 c1"
+#section-6 {
+	background-color: $cream;
+	#section-6-container {
+		display: grid;
+		grid-template-areas: "c1 c1 c1"
         ". c2 ."
         ". c3 .";
-        @include md{
-            grid-template-columns: 10% auto 35% 10%;
-            grid-template-areas:
-            "c1 c1 c1 c1"
+		grid-template-columns: 3% auto 3%;
+		@include md {
+			grid-template-areas: "c1 c1 c1 c1"
             ". c3 c2 .";
-        }
-        @include xl{
-            grid-area: lg;
-        }
-        h1{
-            @include xl{
-                padding-left: 3%;
-            }
-        }
-        #section-6-content2{
-            grid-area: c2;
-            #email{
-                margin: 30px auto 15px;
-                width: 156px;
-                @include md{
-                    margin: 42px 0 29px;
-                }
-                @include lg{
-                    margin: 60px 0 28px;
-                }
-            }
-            #button-container{
-                @include md{
-                    display: flex;
-                    justify-content: flex-end;
-                }
-            }
-            #detail{
-                text-align: center;
-                margin: 0 80px;
-                @include md{
-                    text-align: right;
-                    margin: 0 0 0 80px;
-                }
-            }
-        }
-        #section-6-content3{
-            grid-area: c3;
-            ul{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding-bottom: 30px;
-                @include lg{
-                    justify-content: space-between;
-                    width: 60%;
-                    padding-bottom: 59px;
-                }
-                li{
-                    background-position: center;
-                    background-size: cover;
-                    border-radius: 100%;
-                    height: 140px;
-                    width: 140px;
-                    @include md{
-                        height: 134px;
-                        width: 134px;
-                    }
-                }
-                #profile1{
-                    background-image: url('../img/section6/portrait-1.jpg');
-                    
-                }
-                #profile2{
-                    background-image: url('../img/section6/portrait-2.jpg');
-                }
-            }
-            #report{
-                margin: 30px 20px 15px;
-                @include md{
-                    max-width: 350px;
-                    margin: 42px 0 28px;
-                }
-                @include lg{
-                    margin: 60px 0 28px;
-                    width: 100%;
-                    max-width: 550px;
-                }
-            }
-        }
-
-    }
-    
-    
-    #section-6-content1{
-        grid-area: c1;
-        display: grid;
-        background-color: rgba($greenbrown, $alpha: 0.1);
-        background-blend-mode: multiply;
-        background-image: url('../img/section6/hero6.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 200px;
-        @include md{
-            background-color: white;
-            background-size: 100%;
-            height: 300px;
-        }
-        @include lg{
-            height: 500px;
-        }
-    }
-    .button{
-        a:link,
+			grid-template-columns: 10% auto 35% 10%;
+		}
+		@include xl {
+			grid-area: lg;
+		}
+		h1 {
+			@include xl {
+				padding-left: 3%;
+			}
+		}
+		#section-6-content2 {
+			grid-area: c2;
+			#email {
+				margin: 30px auto 15px;
+				width: 156px;
+				@include md {
+					margin: 42px 0 29px;
+				}
+				@include lg {
+					margin: 60px 0 28px;
+				}
+			}
+			#button-container {
+				@include md {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+			#detail {
+				margin: 0 80px;
+				text-align: center;
+				@include md {
+					margin: 0 0 0 80px;
+					text-align: right;
+				}
+			}
+		}
+		#section-6-content3 {
+			grid-area: c3;
+			ul {
+				align-items: center;
+				display: flex;
+				justify-content: space-around;
+				padding-bottom: 30px;
+				@include lg {
+					justify-content: space-between;
+					padding-bottom: 59px;
+					width: 60%;
+				}
+				li {
+					background-position: center;
+					background-size: cover;
+					border-radius: 100%;
+					height: 140px;
+					width: 140px;
+					@include md {
+						height: 134px;
+						width: 134px;
+					}
+				}
+				#profile1 {
+					background-image: url('../img/section6/portrait-1.jpg');
+				}
+				#profile2 {
+					background-image: url('../img/section6/portrait-2.jpg');
+				}
+			}
+			#report {
+				margin: 30px 20px 15px;
+				@include md {
+					margin: 42px 0 28px;
+					max-width: 350px;
+				}
+				@include lg {
+					margin: 60px 0 28px;
+					max-width: 550px;
+					width: 100%;
+				}
+			}
+		}
+	}
+	#section-6-content1 {
+		background-blend-mode: multiply;
+		background-color: rgba($greenbrown, $alpha: 0.1);
+		background-image: url('../img/section6/hero6.jpg');
+		background-position: center;
+		background-size: cover;
+		display: grid;
+		grid-area: c1;
+		height: 200px;
+		@include md {
+			background-color: white;
+			background-size: 100%;
+			height: 300px;
+		}
+		@include lg {
+			height: 500px;
+		}
+	}
+	.button {
+		a:link,
         a:visited {
-            text-align: center;
-            display: block;
-            padding: 12px 20px;
-            background-color: $green;
-            color: $cream;
-            text-decoration: none;
-            transition: 0.25s;
-        }
-
-        a:hover,
+			background-color: $green;
+			color: $cream;
+			display: block;
+			padding: 12px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: 0.25s;
+		}
+		a:hover,
         a:active {
-            color: $green;
-            background-color: $yellow;
-        }
-    }
+			background-color: $yellow;
+			color: $green;
+		}
+	}
 }

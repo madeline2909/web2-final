@@ -2,25 +2,29 @@
     Header
 ============= */
 header {
-    z-index: 2;
     background-color: rgba(62, 57, 28, .5);
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    @include md{
+    z-index: 2;
+
+    @include md {
         background-color: unset;
     }
-    
-    img{
+
+    img {
         height: 25px;
-        @include md{
+
+        @include md {
             height: 30px;
         }
-        @include lg{
+
+        @include lg {
             height: 40px;
         }
     }
+
     >div {
         display: grid;
         grid-template-areas: "logo . burger"
@@ -31,61 +35,66 @@ header {
             grid-template-areas: "logo nav";
             grid-template-columns: 12% auto;
         }
+
         @include lg {
             grid-template-areas: "logo nav .";
             grid-template-columns: 10% auto 10%;
         }
-        
+
         #logo-container {
-            grid-area: logo;
-            display: flex;
             align-items: center;
+            display: flex;
+            grid-area: logo;
             justify-content: space-evenly;
             width: 80%;
-            @include md{
+
+            @include md {
                 display: unset;
             }
-            img{
-                @include md{
+
+            img {
+                @include md {
                     margin: 25px;
                 }
             }
-            #title{
-                h1{
+
+            #title {
+                h1 {
                     font-style: normal;
                 }
-                @include md{
+
+                @include md {
                     margin-left: 38px;
-                    writing-mode: vertical-rl;
                     text-orientation: mixed;
+                    writing-mode: vertical-rl;
                 }
-                @include lg{
+
+                @include lg {
                     margin-left: 45px;
                 }
             }
         }
 
         #burger-container {
-            grid-area: burger;
             align-items: center;
             display: flex;
+            grid-area: burger;
             justify-content: flex-end;
             padding: 20px;
-            
+
             @include md {
                 display: none !important;
             }
-            
+
             i {
-                cursor: pointer;
                 color: $cream;
+                cursor: pointer;
                 font-size: rem-calc(25);
             }
-            
         }
 
         #nav-container {
-            background-color:rgba(62, 57, 28, .5);
+            background-color: rgba(62, 57, 28, .5);
             display: none;
             grid-area: nav;
             padding: 20px;
@@ -93,13 +102,13 @@ header {
             @include md {
                 display: block !important;
                 height: 75px;
-                padding: 0 15px;
                 margin-top: 0;
+                padding: 0 15px;
             }
-            @include lg{
-                width: 705px;
+
+            @include lg {
                 height: 95px;
-                
+                width: 705px;
             }
         }
     }

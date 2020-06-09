@@ -419,18 +419,24 @@ ul li {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
 
 h1 {
+  color: #F9F6EF;
   font-family: "Raleway", sans-serif;
   font-size: 1.375rem;
-  line-height: 1.5625rem;
-  font-weight: 700;
-  color: #F9F6EF;
   font-style: italic;
+  font-weight: 700;
+  line-height: 1.5625rem;
 }
 h1 > span {
   font-weight: 200;
@@ -449,11 +455,11 @@ h1 > span {
 }
 
 #section-2 h2 {
+  color: #F9F6EF;
   font-family: "Playfair Display", serif;
   font-size: 1.5625rem;
-  line-height: 2.0625rem;
   font-weight: 700;
-  color: #F9F6EF;
+  line-height: 2.0625rem;
 }
 @media (min-width: 768px) {
   #section-2 h2 {
@@ -476,8 +482,8 @@ h1 > span {
 #section-2 p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 400;
+  line-height: 1.375rem;
 }
 #section-2 p > span {
   font-weight: 700;
@@ -486,8 +492,8 @@ h1 > span {
 h3 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
-  line-height: 2.0625rem;
   font-weight: 800;
+  line-height: 2.0625rem;
 }
 h3 > span {
   font-weight: 300;
@@ -508,8 +514,8 @@ h3 > span {
 #section-3-intro > h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.375rem;
-  line-height: 2.375rem;
   font-weight: 700;
+  line-height: 2.375rem;
 }
 @media (min-width: 768px) {
   #section-3-intro > h2 {
@@ -525,11 +531,11 @@ h3 > span {
 }
 
 #section-3-content1 p {
+  color: #F9F6EF;
   font-family: "Playfair Display", serif;
   font-size: 1.125rem;
-  line-height: 1.625rem;
   font-weight: 600;
-  color: #F9F6EF;
+  line-height: 1.625rem;
 }
 @media (min-width: 768px) {
   #section-3-content1 p {
@@ -539,16 +545,16 @@ h3 > span {
 }
 
 .section-3-mission {
+  color: #3E391C;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 400;
-  color: #3E391C;
+  line-height: 1.375rem;
 }
 .section-3-mission .title {
   font-size: 1rem;
-  font-weight: 700;
   font-style: italic;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .section-3-mission .title {
@@ -560,12 +566,12 @@ h3 > span {
 }
 
 #section-3-content4 h2 {
+  color: #63817C;
   font-family: "Playfair Display", serif;
   font-size: 1.375rem;
-  line-height: 1.6875rem;
-  font-weight: 600;
   font-style: italic;
-  color: #63817C;
+  font-weight: 600;
+  line-height: 1.6875rem;
 }
 @media (min-width: 768px) {
   #section-3-content4 h2 {
@@ -578,20 +584,20 @@ h3 > span {
   }
 }
 #section-3-content4 p {
+  color: #3E391C;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 300;
-  color: #3E391C;
+  line-height: 1.375rem;
 }
 
 #caption {
+  color: #F9F6EF;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 300;
   font-style: italic;
-  color: #F9F6EF;
+  font-weight: 300;
+  line-height: 1.25rem;
 }
 #caption .bold {
   font-style: normal;
@@ -599,11 +605,11 @@ h3 > span {
 }
 
 #description {
+  color: #F9F6EF;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 400;
-  color: #F9F6EF;
+  line-height: 1.375rem;
 }
 
 #section-5-container > section {
@@ -628,8 +634,8 @@ h3 > span {
 #section-5-container > section p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 400;
+  line-height: 1.375rem;
 }
 @media (min-width: 768px) {
   #section-5-container > section p {
@@ -639,42 +645,43 @@ h3 > span {
 }
 
 #section-6-container p {
+  color: #60501F;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  line-height: 1.375rem;
   font-weight: 300;
-  color: #60501F;
+  line-height: 1.375rem;
 }
 #section-6-container p .bold {
-  font-weight: 600;
   font-style: italic;
+  font-weight: 600;
 }
 
 .button {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  line-height: 1.8125rem;
   font-weight: 600;
+  line-height: 1.8125rem;
 }
 
 #section-7 h5 {
+  color: #D0B37B;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #D0B37B;
 }
 #section-7 h4 {
+  color: #F9F6EF;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #F9F6EF;
 }
 
-footer h5, footer li {
+footer h5,
+footer li {
+  color: #F9F6EF;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: #F9F6EF;
 }
 
 /* =============
@@ -769,12 +776,12 @@ textarea {
     Header
 ============= */
 header {
-  z-index: 2;
   background-color: rgba(62, 57, 28, 0.5);
   left: 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   header {
@@ -812,9 +819,9 @@ header > div {
   }
 }
 header > div #logo-container {
-  grid-area: logo;
-  display: flex;
   align-items: center;
+  display: flex;
+  grid-area: logo;
   justify-content: space-evenly;
   width: 80%;
 }
@@ -834,8 +841,8 @@ header > div #logo-container #title h1 {
 @media (min-width: 768px) {
   header > div #logo-container #title {
     margin-left: 38px;
-    writing-mode: vertical-rl;
     text-orientation: mixed;
+    writing-mode: vertical-rl;
   }
 }
 @media (min-width: 992px) {
@@ -844,9 +851,9 @@ header > div #logo-container #title h1 {
   }
 }
 header > div #burger-container {
-  grid-area: burger;
   align-items: center;
   display: flex;
+  grid-area: burger;
   justify-content: flex-end;
   padding: 20px;
 }
@@ -856,8 +863,8 @@ header > div #burger-container {
   }
 }
 header > div #burger-container i {
-  cursor: pointer;
   color: #F9F6EF;
+  cursor: pointer;
   font-size: 1.5625rem;
 }
 header > div #nav-container {
@@ -870,14 +877,14 @@ header > div #nav-container {
   header > div #nav-container {
     display: block !important;
     height: 75px;
-    padding: 0 15px;
     margin-top: 0;
+    padding: 0 15px;
   }
 }
 @media (min-width: 992px) {
   header > div #nav-container {
-    width: 705px;
     height: 95px;
+    width: 705px;
   }
 }
 
@@ -885,20 +892,19 @@ header > div #nav-container {
     Footer
 ============= */
 footer {
-  background-image: url("../img/footer/footer.jpg");
-  background-color: rgba(208, 179, 123, 0.2);
   background-blend-mode: soft-light;
-  background-position: center;
-  height: 333px;
-  background-size: 200%;
+  background-color: rgba(208, 179, 123, 0.2);
+  background-image: url("../img/footer/footer.jpg");
   background-position: -50px -70px;
+  background-size: 200%;
+  height: 333px;
   position: relative;
 }
 @media (min-width: 768px) {
   footer {
-    height: 400px;
     background-position: 0px -80px;
     background-size: cover;
+    height: 400px;
   }
 }
 @media (min-width: 992px) {
@@ -917,8 +923,8 @@ footer #footer-container {
 @media (min-width: 768px) {
   footer #footer-container {
     display: grid;
-    grid-template-columns: 7% auto 50% 7%;
     grid-template-areas: ". icons tabs ." ". cp cp .";
+    grid-template-columns: 7% auto 50% 7%;
   }
 }
 @media (min-width: 768px) {
@@ -927,19 +933,19 @@ footer #footer-container {
   }
 }
 footer #footer-tabs li {
-  text-align: right;
   margin: 18px;
+  text-align: right;
 }
 footer #footer-icons {
-  position: absolute;
   display: flex;
   justify-content: space-evenly;
+  position: absolute;
   width: 60%;
 }
 @media (min-width: 768px) {
   footer #footer-icons {
-    position: static;
     grid-area: icons;
+    position: static;
     width: unset;
   }
 }
@@ -961,18 +967,18 @@ footer #copyright {
   justify-content: center;
 }
 footer #copyright h5 {
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
-  height: 120px;
   border-right: solid white 1px;
-  width: 100%;
+  display: flex;
+  height: 120px;
+  justify-content: center;
   margin-right: 5%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   footer #copyright h5 {
-    margin-right: 2%;
     height: 180px;
+    margin-right: 2%;
   }
 }
 @media (min-width: 992px) {
@@ -991,15 +997,14 @@ footer #copyright h5 {
 ============= */
 #section-1 {
   background-image: url("../img/section1/hero1.jpg");
-  background-position: center;
   background-position: -120px 0;
   background-size: cover;
   height: 400px;
 }
 @media (min-width: 768px) {
   #section-1 {
-    height: 450px;
     background-position: 0 0;
+    height: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -1017,7 +1022,6 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-2 {
     background-image: url("../img/section2/hero2.jpg");
-    background-position: center;
     background-position: -100px -370px;
     background-size: 180%;
     height: auto;
@@ -1025,28 +1029,28 @@ footer #copyright h5 {
 }
 @media (min-width: 1200px) {
   #section-2 {
-    background-size: 120%;
     background-position: 0 -350px;
+    background-size: 120%;
   }
 }
 #section-2 #section-2-container {
   display: grid;
-  grid-template-columns: 3% auto 3%;
   grid-template-areas: "h1 h1 h1" "c1 c1 c1" "i1 i1 i1" ". a2 ." ". i2 ." ". i3 .";
+  grid-template-columns: 3% auto 3%;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container {
-    grid-template-columns: 50% auto;
-    grid-template-areas: "c1 c1" "i3 a2" "i1 a2" "i1 i2";
-    padding-bottom: 40px;
     column-gap: 22px;
+    grid-template-areas: "c1 c1" "i3 a2" "i1 a2" "i1 i2";
+    grid-template-columns: 50% auto;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 992px) {
   #section-2 #section-2-container {
     column-gap: 20px;
-    grid-template-columns: 8% repeat(4, 1fr) 8%;
     grid-template-areas: ". c1 c1 c1 c1 ." ". i1 i1 a2 a2 ." "rec3 rec3 rec3 a2 a2 ." "rec3 rec3 rec3 i2 i3 .";
+    grid-template-columns: 8% repeat(4, 1fr) 8%;
   }
 }
 @media (min-width: 1200px) {
@@ -1062,14 +1066,14 @@ footer #copyright h5 {
   background-size: cover;
 }
 #section-2 #section-2-container #section-2-img1 {
-  grid-area: i1;
   background-image: url("../img/section2/about-1.jpg");
+  grid-area: i1;
   height: 330px;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-img1 {
-    margin-left: 3%;
     height: 390px;
+    margin-left: 3%;
   }
 }
 @media (min-width: 992px) {
@@ -1078,16 +1082,16 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-img2 {
-  grid-area: i2;
   background-image: url("../img/section2/about-2.jpg");
+  grid-area: i2;
   height: 170px;
   margin-bottom: 15px;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-img2 {
+    height: 200px;
     margin-bottom: 0;
     margin-right: 3%;
-    height: 200px;
   }
 }
 @media (min-width: 992px) {
@@ -1097,34 +1101,34 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-img3 {
-  grid-area: i3;
   background-image: url("../img/section2/about-3.jpg");
   background-position: -100px -140px;
   background-size: 200%;
+  grid-area: i3;
   height: 170px;
   margin-bottom: 26px;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-img3 {
-    margin-left: 3%;
-    background-size: 150%;
     background-position: -100px -60px;
+    background-size: 150%;
     height: 290px;
+    margin-left: 3%;
   }
 }
 @media (min-width: 992px) {
   #section-2 #section-2-container #section-2-img3 {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     height: 213px;
     margin: unset;
   }
 }
 #section-2 #section-2-container #section-2-content1 {
-  grid-area: c1;
   background-image: url("../img/section2/hero2.jpg");
   background-position: top center;
   background-size: cover;
+  grid-area: c1;
   height: auto;
 }
 @media (min-width: 768px) {
@@ -1134,10 +1138,10 @@ footer #copyright h5 {
 }
 @media (min-width: 1200px) {
   #section-2 #section-2-container #section-2-content1 {
-    width: 100%;
     display: grid;
-    grid-template-columns: 3% auto 3%;
     grid-template-areas: ". h1 ." " rec1 rec1 rec1" ". a1 .";
+    grid-template-columns: 3% auto 3%;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -1155,10 +1159,10 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-content1 #section-2-article1 {
-    display: grid;
-    grid-template-columns: 50% auto;
     column-gap: 22px;
+    display: grid;
     grid-template-areas: "h2 h2" ". date" ". rec2" "p .";
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 992px) {
@@ -1187,37 +1191,37 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 > p {
-  border-top: solid white 1px;
   background-color: rgba(151, 143, 79, 0.49);
-  padding: 23px 25px 23px 15px;
+  border-top: solid white 1px;
   color: #F9F6EF;
+  padding: 23px 25px 23px 15px;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-content1 #section-2-article1 > p {
-    grid-area: p;
-    border: unset;
     background-color: unset;
+    border: unset;
+    grid-area: p;
     padding: 0 0 22px 106px;
   }
 }
 @media (min-width: 992px) {
   #section-2 #section-2-container #section-2-content1 #section-2-article1 > p {
-    width: 80%;
     padding: 0 0 60px;
+    width: 80%;
   }
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 #date {
-  z-index: 1;
-  grid-area: date;
   display: flex;
+  grid-area: date;
   justify-content: flex-end;
   padding-right: 15px;
+  z-index: 1;
 }
 #section-2 #section-2-container #section-2-content1 #section-2-article1 #date h3 {
-  text-align: right;
+  bottom: 140px;
   color: #F9F6EF;
   position: absolute;
-  bottom: 140px;
+  text-align: right;
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-content1 #section-2-article1 #date {
@@ -1241,16 +1245,16 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-content1 #section-2-rectangle1 {
+  background-color: rgba(255, 255, 255, 0.18);
+  border: solid white 1px;
   height: 100px;
   margin: 0 40px;
-  border: solid white 1px;
-  background-color: rgba(255, 255, 255, 0.18);
 }
 @media (min-width: 768px) {
   #section-2 #section-2-container #section-2-content1 #section-2-rectangle1 {
     height: 160px;
-    width: 555px;
     margin: auto;
+    width: 555px;
   }
 }
 @media (min-width: 992px) {
@@ -1267,13 +1271,13 @@ footer #copyright h5 {
   }
 }
 #section-2 #section-2-container #section-2-content1 #section-2-rectangle2 {
-  position: absolute;
-  grid-area: rec2;
-  height: 300px;
-  width: 100%;
+  background-color: rgba(151, 143, 79, 0.49);
   border: solid white 1px;
   border-right: none;
-  background-color: rgba(151, 143, 79, 0.49);
+  grid-area: rec2;
+  height: 300px;
+  position: absolute;
+  width: 100%;
 }
 @media (min-width: 992px) {
   #section-2 #section-2-container #section-2-content1 #section-2-rectangle2 {
@@ -1289,11 +1293,11 @@ footer #copyright h5 {
 @media (min-width: 992px) {
   #section-2 #section-2-container #section-2-rectangle3 {
     background-color: rgba(255, 255, 255, 0.18);
-    margin-top: 20px;
     border: solid white 1px;
-    width: 100%;
     border-left: unset;
     grid-area: rec3;
+    margin-top: 20px;
+    width: 100%;
   }
 }
 #section-2 #section-2-article2 {
@@ -1316,8 +1320,8 @@ footer #copyright h5 {
 }
 @media (min-width: 1200px) {
   #section-2 #section-2-article2 > p {
-    padding-top: 200px;
     padding-right: 19%;
+    padding-top: 200px;
   }
 }
 
@@ -1329,8 +1333,8 @@ footer #copyright h5 {
 }
 #section-3 #section-3-container {
   display: grid;
-  grid-template-columns: 3% auto 3%;
   grid-template-areas: "c1 c1 c1" ". c ." ". c4 .";
+  grid-template-columns: 3% auto 3%;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-container {
@@ -1343,19 +1347,19 @@ footer #copyright h5 {
   }
 }
 #section-3 #section-3-content1 {
-  position: relative;
-  grid-area: c1;
-  background-color: rgba(62, 57, 28, 0.2);
   background-blend-mode: multiply;
+  background-color: rgba(62, 57, 28, 0.2);
   background-image: url("../img/section3/hero3.jpg");
   background-position: center;
   background-size: cover;
+  grid-area: c1;
   height: auto;
+  position: relative;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content1 {
-    background-image: unset;
     background-color: unset;
+    background-image: unset;
   }
 }
 @media (min-width: 768px) {
@@ -1368,8 +1372,8 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content1 .header {
-    height: 500px;
     background-position: 0 -90px;
+    height: 500px;
   }
 }
 @media (min-width: 1200px) {
@@ -1397,15 +1401,15 @@ footer #copyright h5 {
 #section-3 #section-3-content1 #section-3-intro h2 {
   color: #EFC861;
   padding-left: 40px;
-  width: 60%;
   padding-top: 81px;
+  width: 60%;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content1 #section-3-intro h2 {
+    bottom: 175px;
     position: absolute;
     text-align: right;
     width: 250px;
-    bottom: 175px;
   }
 }
 @media (min-width: 992px) {
@@ -1450,15 +1454,15 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-intropara p {
-    text-align: left;
     padding: 46px 0 34px 48px;
+    text-align: left;
     width: 66%;
   }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-intropara p {
-    text-align: right;
     padding: 54px 40px 62px 0;
+    text-align: right;
     width: 522px;
   }
 }
@@ -1495,11 +1499,11 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-3 #section-3-bigcontent {
-    max-width: 1200px;
-    margin: auto;
     display: grid;
-    grid-template-columns: 50% auto;
     grid-template-areas: "c2 c3";
+    grid-template-columns: 50% auto;
+    margin: auto;
+    max-width: 1200px;
   }
 }
 #section-3 #section-3-content2 {
@@ -1508,17 +1512,17 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-3 #section-3-content2 {
     display: grid;
+    grid-template-areas: "t2 i1" "t2 i2";
     grid-template-columns: 50% auto;
     grid-template-rows: 195px auto;
     row-gap: 22px;
-    grid-template-areas: "t2 i1" "t2 i2";
   }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content2 {
-    grid-template-rows: 260px auto;
-    grid-template-areas: "i1 t2" "i2 t2";
     column-gap: 20px;
+    grid-template-areas: "i1 t2" "i2 t2";
+    grid-template-rows: 260px auto;
   }
 }
 @media (min-width: 768px) {
@@ -1540,8 +1544,8 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content2 #section-3-img2 {
-    margin: 0 0 22px 0;
     grid-area: i2;
+    margin: 0 0 22px 0;
   }
 }
 @media (min-width: 992px) {
@@ -1551,15 +1555,15 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content2 #section-3-t2 {
+    grid-area: t2;
     margin-right: 22px;
     text-align: right;
-    grid-area: t2;
   }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content2 #section-3-t2 {
-    text-align: left;
     margin-right: 0;
+    text-align: left;
   }
 }
 #section-3 #section-3-content3 {
@@ -1568,10 +1572,10 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-3 #section-3-content3 {
     display: grid;
-    row-gap: 22px;
+    grid-template-areas: "i3 t3 " "i4 t3";
     grid-template-columns: 50% auto;
     grid-template-rows: 216px auto;
-    grid-template-areas: "i3 t3 " "i4 t3";
+    row-gap: 22px;
   }
 }
 @media (min-width: 992px) {
@@ -1590,8 +1594,8 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content3 #section-3-img3 {
-    margin-right: 22px;
     grid-area: i3;
+    margin-right: 22px;
   }
 }
 @media (min-width: 992px) {
@@ -1604,9 +1608,9 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content3 #section-3-img4 {
-    margin-right: 22px;
     background-position: top;
     grid-area: i4;
+    margin-right: 22px;
   }
 }
 @media (min-width: 992px) {
@@ -1625,17 +1629,17 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content4 {
-    margin: 50px 0 37px 80px;
-    display: grid;
-    grid-template-columns: 72% auto;
     column-gap: 22px;
+    display: grid;
     grid-template-areas: "t4 i5";
+    grid-template-columns: 72% auto;
+    margin: 50px 0 37px 80px;
   }
 }
 @media (min-width: 992px) {
   #section-3 #section-3-content4 {
-    margin: 60px 0 58px 8%;
     grid-template-columns: 50% auto;
+    margin: 60px 0 58px 8%;
   }
 }
 #section-3 #section-3-content4 #section-3-img5 {
@@ -1643,17 +1647,17 @@ footer #copyright h5 {
   background-position: -20px -20px;
   background-size: 180%;
   height: 240px;
-  width: 240px;
   margin: 30px auto 15px auto;
+  width: 240px;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content4 #section-3-img5 {
-    width: auto;
-    grid-area: i5;
-    height: auto;
     background-position: -100px 0;
     background-size: cover;
+    grid-area: i5;
+    height: auto;
     margin: 0;
+    width: auto;
   }
 }
 @media (min-width: 992px) {
@@ -1667,13 +1671,13 @@ footer #copyright h5 {
   }
 }
 #section-3 #section-3-content4 h2 {
-  text-align: center;
   margin: 0 10px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #section-3 #section-3-content4 h2 {
-    text-align: left;
     margin: 0;
+    text-align: left;
   }
 }
 #section-3 #section-3-content4 p {
@@ -1696,16 +1700,16 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-4 {
-    background-size: 100%;
     background-position: 0 0;
+    background-size: 100%;
   }
 }
 #section-4 #section-4-container {
-  position: relative;
   background-image: url("../img/section4/hero4-2.png");
   background-position: right;
   background-size: cover;
   height: auto;
+  position: relative;
 }
 @media (min-width: 992px) {
   #section-4 #section-4-container {
@@ -1713,8 +1717,8 @@ footer #copyright h5 {
   }
 }
 #section-4 #section-4-container h1 {
-  margin-bottom: 60px;
   color: #EFC861;
+  margin-bottom: 60px;
 }
 @media (min-width: 1200px) {
   #section-4 #section-4-container h1 {
@@ -1726,26 +1730,26 @@ footer #copyright h5 {
 }
 #section-4 #allgallery {
   display: grid;
+  grid-template-areas: ". . . g1 ." ". cap . g1 ." ". cap . g4 ." "g6 g6 . g4 ." "g6 g6 . g5 ." ". g3 g3 g3 ." ". g7 g7 g7 ." ". des des des ." ". g8 g8 g8 .";
   grid-template-columns: 3% 1fr 3% 1fr 3%;
   grid-template-rows: repeat(2, 75px) 60px 90px 150px repeat(4, 170px);
-  grid-template-areas: ". . . g1 ." ". cap . g1 ." ". cap . g4 ." "g6 g6 . g4 ." "g6 g6 . g5 ." ". g3 g3 g3 ." ". g7 g7 g7 ." ". des des des ." ". g8 g8 g8 .";
   row-gap: 10px;
 }
 @media (min-width: 768px) {
   #section-4 #allgallery {
+    column-gap: 22px;
+    grid-template-areas: "cap g1 g2 ." "g6 g4 g5 ." "g3 g7 g7 g7" "g8 g8 des des";
     grid-template-columns: 40% 1fr 1fr 12%;
     grid-template-rows: repeat(2, 153px) repeat(2, 253px);
-    grid-template-areas: "cap g1 g2 ." "g6 g4 g5 ." "g3 g7 g7 g7" "g8 g8 des des";
     row-gap: 22px;
-    column-gap: 22px;
   }
 }
 @media (min-width: 992px) {
   #section-4 #allgallery {
-    margin-top: -300px;
+    grid-template-areas: ". cap g1 g2 ." "g3 g3 g4 g5 ." ". g6 g7 g7 ." ". g6 g8 des .";
     grid-template-columns: auto repeat(3, 300px) auto;
     grid-template-rows: repeat(4, 241px);
-    grid-template-areas: ". cap g1 g2 ." "g3 g3 g4 g5 ." ". g6 g7 g7 ." ". g6 g8 des .";
+    margin-top: -300px;
   }
 }
 @media (min-width: 1200px) {
@@ -1754,14 +1758,14 @@ footer #copyright h5 {
   }
 }
 #section-4 #caption {
-  text-align: right;
   grid-area: cap;
+  text-align: right;
 }
 @media (min-width: 768px) {
   #section-4 #caption {
+    align-items: flex-end;
     display: flex;
     justify-self: right;
-    align-items: flex-end;
   }
 }
 #section-4 .section-4-img {
@@ -1770,40 +1774,40 @@ footer #copyright h5 {
   height: auto;
 }
 #section-4 #gallery1 {
-  grid-area: g1;
   background-image: url("../img/section4/gallery-1.jpg");
+  grid-area: g1;
 }
 #section-4 #gallery2 {
-  grid-area: g2;
   background-image: url("../img/section4/gallery-2.jpg");
+  grid-area: g2;
 }
 #section-4 #gallery3 {
-  grid-area: g3;
   background-image: url("../img/section4/gallery-3.jpg");
+  grid-area: g3;
 }
 @media (min-width: 768px) {
   #section-4 #gallery3 {
-    background-size: 220%;
     background-position: -180px -150px;
+    background-size: 220%;
   }
 }
 @media (min-width: 992px) {
   #section-4 #gallery3 {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
   }
 }
 #section-4 #gallery4 {
-  grid-area: g4;
   background-image: url("../img/section4/gallery-4.jpg");
+  grid-area: g4;
 }
 #section-4 #gallery5 {
-  grid-area: g5;
   background-image: url("../img/section4/gallery-5.jpg");
+  grid-area: g5;
 }
 #section-4 #gallery6 {
-  grid-area: g6;
   background-image: url("../img/section4/gallery-6.jpeg");
+  grid-area: g6;
 }
 @media (min-width: 768px) {
   #section-4 #gallery6 {
@@ -1811,8 +1815,8 @@ footer #copyright h5 {
   }
 }
 #section-4 #gallery7 {
-  grid-area: g7;
   background-image: url("../img/section4/gallery-7.jpg");
+  grid-area: g7;
 }
 @media (min-width: 768px) {
   #section-4 #gallery7 {
@@ -1825,15 +1829,15 @@ footer #copyright h5 {
   }
 }
 #section-4 #gallery8 {
-  grid-area: g8;
   background-image: url("../img/section4/gallery-8.jpg");
+  grid-area: g8;
 }
 @media (min-width: 768px) {
   #section-4 #gallery8 {
     display: flex;
     justify-self: right;
-    width: 80%;
     margin-left: 12%;
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
@@ -1843,8 +1847,8 @@ footer #copyright h5 {
   }
 }
 #section-4 #description {
-  display: flex;
   align-items: center;
+  display: flex;
   grid-area: des;
   padding: 0 50px;
 }
@@ -1857,10 +1861,10 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-4 #date1 {
-    text-align: right;
     display: flex;
     justify-content: flex-end;
     margin-right: 3%;
+    text-align: right;
   }
 }
 @media (min-width: 992px) {
@@ -1881,36 +1885,36 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-4 #date2 {
-    text-align: right;
     margin-left: 3%;
+    text-align: right;
   }
 }
 @media (min-width: 768px) {
   #section-4 #date2 h3 {
-    position: absolute;
     bottom: 420px;
+    position: absolute;
   }
 }
 @media (min-width: 992px) {
   #section-4 #date2 h3 {
-    text-align: left;
     bottom: 420px;
     margin-left: 5%;
+    text-align: left;
   }
 }
 #section-4 #video {
   display: grid;
-  grid-template-columns: 3% auto 3%;
   grid-template-areas: ". v1 ." ". v2 .";
-  row-gap: 10px;
+  grid-template-columns: 3% auto 3%;
   padding-bottom: 30px;
+  row-gap: 10px;
 }
 @media (min-width: 768px) {
   #section-4 #video {
-    margin: 0 20px;
-    grid-template-columns: 50%;
-    grid-template-areas: "v1 v2";
     column-gap: 20px;
+    grid-template-areas: "v1 v2";
+    grid-template-columns: 50%;
+    margin: 0 20px;
     padding: 212px 0 40px;
   }
 }
@@ -1942,8 +1946,8 @@ footer #copyright h5 {
 }
 #section-5 #section-5-container {
   display: grid;
-  grid-template-columns: 15px auto 15px;
   grid-template-areas: "c1 c1 c1" ". c2 .";
+  grid-template-columns: 15px auto 15px;
 }
 #section-5 #section-5-container > section {
   grid-area: c2;
@@ -1971,11 +1975,10 @@ footer #copyright h5 {
   }
 }
 #section-5 #section-5-content1 {
-  grid-area: c1;
   background-image: url("../img/section5/hero5.jpg");
   background-position: center;
-  background-size: cover;
   background-size: 130%;
+  grid-area: c1;
   height: 200px;
 }
 @media (min-width: 768px) {
@@ -1997,13 +2000,13 @@ footer #copyright h5 {
 }
 #section-6 #section-6-container {
   display: grid;
-  grid-template-columns: 3% auto 3%;
   grid-template-areas: "c1 c1 c1" ". c2 ." ". c3 .";
+  grid-template-columns: 3% auto 3%;
 }
 @media (min-width: 768px) {
   #section-6 #section-6-container {
-    grid-template-columns: 10% auto 35% 10%;
     grid-template-areas: "c1 c1 c1 c1" ". c3 c2 .";
+    grid-template-columns: 10% auto 35% 10%;
   }
 }
 @media (min-width: 1200px) {
@@ -2040,29 +2043,29 @@ footer #copyright h5 {
   }
 }
 #section-6 #section-6-container #section-6-content2 #detail {
-  text-align: center;
   margin: 0 80px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #section-6 #section-6-container #section-6-content2 #detail {
-    text-align: right;
     margin: 0 0 0 80px;
+    text-align: right;
   }
 }
 #section-6 #section-6-container #section-6-content3 {
   grid-area: c3;
 }
 #section-6 #section-6-container #section-6-content3 ul {
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
   padding-bottom: 30px;
 }
 @media (min-width: 992px) {
   #section-6 #section-6-container #section-6-content3 ul {
     justify-content: space-between;
-    width: 60%;
     padding-bottom: 59px;
+    width: 60%;
   }
 }
 #section-6 #section-6-container #section-6-content3 ul li {
@@ -2089,25 +2092,25 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-6 #section-6-container #section-6-content3 #report {
-    max-width: 350px;
     margin: 42px 0 28px;
+    max-width: 350px;
   }
 }
 @media (min-width: 992px) {
   #section-6 #section-6-container #section-6-content3 #report {
     margin: 60px 0 28px;
-    width: 100%;
     max-width: 550px;
+    width: 100%;
   }
 }
 #section-6 #section-6-content1 {
-  grid-area: c1;
-  display: grid;
-  background-color: rgba(62, 57, 28, 0.1);
   background-blend-mode: multiply;
+  background-color: rgba(62, 57, 28, 0.1);
   background-image: url("../img/section6/hero6.jpg");
   background-position: center;
   background-size: cover;
+  display: grid;
+  grid-area: c1;
   height: 200px;
 }
 @media (min-width: 768px) {
@@ -2124,18 +2127,18 @@ footer #copyright h5 {
 }
 #section-6 .button a:link,
 #section-6 .button a:visited {
-  text-align: center;
-  display: block;
-  padding: 12px 20px;
   background-color: #736B3D;
   color: #F9F6EF;
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
   text-decoration: none;
   transition: 0.25s;
 }
 #section-6 .button a:hover,
 #section-6 .button a:active {
-  color: #736B3D;
   background-color: #EFC861;
+  color: #736B3D;
 }
 
 /* =============
@@ -2146,18 +2149,18 @@ footer #copyright h5 {
 }
 #section-7 .button a:link,
 #section-7 .button a:visited {
-  text-align: center;
-  display: block;
-  padding: 12px 20px;
   background-color: #736B3D;
   color: #F9F6EF;
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
   text-decoration: none;
   transition: 0.25s;
 }
 #section-7 .button a:hover,
 #section-7 .button a:active {
-  color: #736B3D;
   background-color: #EFC861;
+  color: #736B3D;
 }
 #section-7 #section-7-news {
   background-color: #D0B37B;
@@ -2166,8 +2169,8 @@ footer #copyright h5 {
 @media (min-width: 768px) {
   #section-7 #section-7-news #news-container {
     margin: 0 10%;
-    padding-top: 49px;
     padding-bottom: 50px;
+    padding-top: 49px;
   }
 }
 @media (min-width: 992px) {
@@ -2182,22 +2185,22 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-7 #section-7-news #section-7-follow {
-    width: 55%;
     padding-bottom: 12px;
+    width: 55%;
   }
 }
 @media (min-width: 992px) {
   #section-7 #section-7-news #section-7-follow {
-    padding-bottom: 18px;
     margin: auto;
+    padding-bottom: 18px;
     width: 30%;
   }
 }
 #section-7 #section-7-news #section-7-follow ul {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 @media (min-width: 992px) {
   #section-7 #section-7-news #section-7-follow ul h4 {
@@ -2221,9 +2224,8 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-7 #section-7-news #newsletter-items {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -2232,9 +2234,9 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-7 #section-7-news #newsletter-items #email-container {
-    padding: 0;
     margin-right: 20px;
     min-width: 400px;
+    padding: 0;
   }
 }
 @media (min-width: 992px) {
@@ -2243,9 +2245,9 @@ footer #copyright h5 {
   }
 }
 #section-7 #section-7-news #newsletter-items #email-container h5 {
-  padding: 10px;
-  font-style: italic;
   background-color: #F9F6EF;
+  font-style: italic;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-news #newsletter-items #email-container h5 {
@@ -2254,8 +2256,8 @@ footer #copyright h5 {
 }
 #section-7 #section-7-news #newsletter-items #news {
   margin: 0 74px;
-  padding-bottom: 30px;
   min-width: 174px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-news #newsletter-items #news {
@@ -2273,12 +2275,11 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate {
-    height: 140px;
-    display: flex;
     align-items: center;
     display: grid;
-    grid-template-columns: 10% 30% 3% auto 10%;
     grid-template-areas: ". donate . icons .";
+    grid-template-columns: 10% 30% 3% auto 10%;
+    height: 140px;
   }
 }
 @media (min-width: 1200px) {
@@ -2287,30 +2288,30 @@ footer #copyright h5 {
   }
 }
 #section-7 #section-7-donate #donate {
-  min-width: 235px;
   margin: 0 74px;
+  min-width: 235px;
   padding-top: 30px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate #donate {
-    max-width: 235px;
-    margin: 0;
-    padding: unset;
     grid-area: donate;
+    margin: 0;
+    max-width: 235px;
+    padding: unset;
   }
 }
 #section-7 #section-7-donate ul {
-  padding: 25px 0 30px;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 25px 0 30px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate ul {
-    padding: unset;
     grid-area: icons;
     justify-content: space-between;
+    padding: unset;
   }
 }
 #section-7 #section-7-donate ul li {
@@ -2322,17 +2323,17 @@ footer #copyright h5 {
   }
 }
 #section-7 #section-7-donate #paypal {
+  background-color: #000;
+  border-radius: 100px;
+  color: #fff;
   display: flex;
   justify-content: center;
-  padding: 5px 70px;
   margin: 0 100px 15px;
-  color: #fff;
-  border-radius: 100px;
-  background-color: #000;
+  padding: 5px 70px;
 }
 @media (min-width: 768px) {
   #section-7 #section-7-donate #paypal {
-    padding: 5px 45px;
     margin: 0;
+    padding: 5px 45px;
   }
 }

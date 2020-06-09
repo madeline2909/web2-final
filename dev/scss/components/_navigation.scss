@@ -2,40 +2,34 @@
     Navigation
 ============= */
 #nav-container {
-    @include lg{
-        margin: auto;
-    }
-    ul {
-        height: 100%;
-        text-align: right;
-
-        @include md {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        li {
-            margin-bottom: 20px;
-
-            @include md {
-                align-items: center;
-                display: flex;
-                margin: auto;
-                
-            }
-
-            a:link,
+	@include lg {
+		margin: auto;
+	}
+	ul {
+		height: 100%;
+		text-align: right;
+		@include md {
+			display: flex;
+			justify-content: flex-end;
+		}
+		li {
+			margin-bottom: 20px;
+			@include md {
+				align-items: center;
+				display: flex;
+				margin: auto;
+			}
+			a:link,
             a:visited {
-                color: $cream;
-                font-size: rem-calc(20);
-                text-decoration: none;
-                transition: 0.25s;
-            }
-
-            a:hover,
+				color: $cream;
+				font-size: rem-calc(20);
+				text-decoration: none;
+				transition: 0.25s;
+			}
+			a:hover,
             a:active {
-                color: $yellow;
-            }
-        }
-    }
+				color: $yellow;
+			}
+		}
+	}
 }

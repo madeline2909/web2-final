@@ -1,44 +1,38 @@
 /* =============
     Section 4
 ============= */
-#section-4{
-    background-image: url('../img/section4/hero4.jpg');
-    background-position-x: -140px;
-    background-size: 190%;
-    height: auto;
-    @include md{
-        background-size: 100%;
-        background-position: 0 0;
-    }
-    #section-4-container{
-        position: relative;
-        background-image: url('../img/section4/hero4-2.png');
-        background-position: right;
-        background-size: cover;
-        height: auto;
-        @include lg{
-            padding-top: 430px;
-        }
-        h1{
-            margin-bottom: 60px;
-            color: $yellow;
-            @include xl{
-                grid-area: lg;
-            }
-        }
-    }
-    h3{
-        color: $cream;
-    }
-    #allgallery{
-        display: grid;
-        grid-template-columns: 3% 1fr 3% 1fr 3%;
-        grid-template-rows:
-        repeat(2,75px)
-        60px 90px 150px
-        repeat(4,170px);
-        grid-template-areas: 
-        ". . . g1 ."
+#section-4 {
+	background-image: url('../img/section4/hero4.jpg');
+	background-position-x: -140px;
+	background-size: 190%;
+	height: auto;
+	@include md {
+		background-position: 0 0;
+		background-size: 100%;
+	}
+	#section-4-container {
+		background-image: url('../img/section4/hero4-2.png');
+		background-position: right;
+		background-size: cover;
+		height: auto;
+		position: relative;
+		@include lg {
+			padding-top: 430px;
+		}
+		h1 {
+			color: $yellow;
+			margin-bottom: 60px;
+			@include xl {
+				grid-area: lg;
+			}
+		}
+	}
+	h3 {
+		color: $cream;
+	}
+	#allgallery {
+		display: grid;
+		grid-template-areas: ". . . g1 ."
         ". cap . g1 ."
         ". cap . g4 ."
         "g6 g6 . g4 ."
@@ -47,185 +41,183 @@
         ". g7 g7 g7 ."
         ". des des des ."
         ". g8 g8 g8 .";
-        row-gap: 10px;
-        @include md{
-            grid-template-columns: 40% 1fr 1fr 12%;
-            grid-template-rows: repeat(2,153px) repeat(2,253px);
-            grid-template-areas: 
-            "cap g1 g2 ."
+		grid-template-columns: 3% 1fr 3% 1fr 3%;
+		grid-template-rows: repeat(2,75px)
+        60px 90px 150px
+        repeat(4,170px);
+		row-gap: 10px;
+		@include md {
+			column-gap: 22px;
+			grid-template-areas: "cap g1 g2 ."
             "g6 g4 g5 ."
             "g3 g7 g7 g7"
             "g8 g8 des des";
-            row-gap: 22px;
-            column-gap: 22px;
-        }
-        @include lg{
-            margin-top: -300px;
-            grid-template-columns: auto repeat(3, 300px) auto;
-            grid-template-rows: repeat(4, 241px);
-            grid-template-areas: 
-            ". cap g1 g2 ."
+			grid-template-columns: 40% 1fr 1fr 12%;
+			grid-template-rows: repeat(2,153px) repeat(2,253px);
+			row-gap: 22px;
+		}
+		@include lg {
+			grid-template-areas: ". cap g1 g2 ."
             "g3 g3 g4 g5 ."
             ". g6 g7 g7 ."
             ". g6 g8 des .";
-        }
-        @include xl{
-            grid-template-columns: auto repeat(3, 380px) auto;
-        }
-    }
-    #caption{
-        text-align: right;
-        grid-area: cap;
-        @include md{
-            display: flex;
-            justify-self: right;
-            align-items: flex-end;
-        }
-    }
-    .section-4-img{
-        background-position: center;
-        background-size: cover;
-        height: auto;
-    }
-    #gallery1{
-        grid-area: g1;
-        background-image: url('../img/section4/gallery-1.jpg');
-    }
-    #gallery2{
-        grid-area: g2;
-        background-image: url('../img/section4/gallery-2.jpg');
-    }
-    #gallery3{
-        grid-area: g3;
-        background-image: url('../img/section4/gallery-3.jpg');
-        @include md{
-            background-size: 220%;
-            background-position: -180px -150px;
-        }
-        @include lg{
-            background-size: cover;
-            background-position: center;
-        }
-    }
-    #gallery4{
-        grid-area: g4;
-        background-image: url('../img/section4/gallery-4.jpg');
-    }
-    #gallery5{
-        grid-area: g5;
-        background-image: url('../img/section4/gallery-5.jpg');
-    }
-    #gallery6{
-        grid-area: g6;
-        background-image: url('../img/section4/gallery-6.jpeg');
-        @include md{
-            background-position: 0 -90px;
-        }
-    }
-    #gallery7{
-        grid-area: g7;
-        background-image: url('../img/section4/gallery-7.jpg');
-        @include md{
-            margin-right: 3%;
-        }
-        @include lg{
-            margin: 0;
-        }
-    }
-    #gallery8{
-        grid-area: g8;
-        background-image: url('../img/section4/gallery-8.jpg');
-        @include md{
-            display: flex;
-            justify-self: right;
-            width: 80%;
-            margin-left: 12%;
-        }
-        @include lg{
-            margin: 0;
-            width: 100%;
-        }
-    }
-    #description{
-        display: flex;
-        align-items: center;
-        grid-area: des;
-        padding:0 50px;
-        @include md{
-            display: unset;
-            padding: 0;
-            padding-right: 25px;
-        }
-        
-    }
-    #date1{
-        @include md{
-            text-align: right;
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 3%;
-        }
-        @include lg{
-            margin-right: 8%;
-        }
-        h3{
-            @include md{
-                position: absolute;
-                top: 140px;
-            }
-            @include lg{
-                top: 190px;
-            }
-        }
-    }
-    #date2{
-        @include md{
-            text-align: right;
-            margin-left: 3%;
-        }
-        h3{
-            @include md{
-                position: absolute;
-                bottom: 420px;
-            }
-            @include lg{
-                text-align: left;
-                bottom: 420px;
-                margin-left: 5%;
-            }
-        }
-
-    }
-    #video{
-        display: grid;
-        grid-template-columns: 3% auto 3%;
-        grid-template-areas: 
-        ". v1 ."
+			grid-template-columns: auto repeat(3, 300px) auto;
+			grid-template-rows: repeat(4, 241px);
+			margin-top: -300px;
+		}
+		@include xl {
+			grid-template-columns: auto repeat(3, 380px) auto;
+		}
+	}
+	#caption {
+		grid-area: cap;
+		text-align: right;
+		@include md {
+			align-items: flex-end;
+			display: flex;
+			justify-self: right;
+		}
+	}
+	.section-4-img {
+		background-position: center;
+		background-size: cover;
+		height: auto;
+	}
+	#gallery1 {
+		background-image: url('../img/section4/gallery-1.jpg');
+		grid-area: g1;
+	}
+	#gallery2 {
+		background-image: url('../img/section4/gallery-2.jpg');
+		grid-area: g2;
+	}
+	#gallery3 {
+		background-image: url('../img/section4/gallery-3.jpg');
+		grid-area: g3;
+		@include md {
+			background-position: -180px -150px;
+			background-size: 220%;
+		}
+		@include lg {
+			background-position: center;
+			background-size: cover;
+		}
+	}
+	#gallery4 {
+		background-image: url('../img/section4/gallery-4.jpg');
+		grid-area: g4;
+	}
+	#gallery5 {
+		background-image: url('../img/section4/gallery-5.jpg');
+		grid-area: g5;
+	}
+	#gallery6 {
+		background-image: url('../img/section4/gallery-6.jpeg');
+		grid-area: g6;
+		@include md {
+			background-position: 0 -90px;
+		}
+	}
+	#gallery7 {
+		background-image: url('../img/section4/gallery-7.jpg');
+		grid-area: g7;
+		@include md {
+			margin-right: 3%;
+		}
+		@include lg {
+			margin: 0;
+		}
+	}
+	#gallery8 {
+		background-image: url('../img/section4/gallery-8.jpg');
+		grid-area: g8;
+		@include md {
+			display: flex;
+			justify-self: right;
+			margin-left: 12%;
+			width: 80%;
+		}
+		@include lg {
+			margin: 0;
+			width: 100%;
+		}
+	}
+	#description {
+		align-items: center;
+		display: flex;
+		grid-area: des;
+		padding: 0 50px;
+		@include md {
+			display: unset;
+			padding: 0;
+			padding-right: 25px;
+		}
+	}
+	#date1 {
+		@include md {
+			display: flex;
+			justify-content: flex-end;
+			margin-right: 3%;
+			text-align: right;
+		}
+		@include lg {
+			margin-right: 8%;
+		}
+		h3 {
+			@include md {
+				position: absolute;
+				top: 140px;
+			}
+			@include lg {
+				top: 190px;
+			}
+		}
+	}
+	#date2 {
+		@include md {
+			margin-left: 3%;
+			text-align: right;
+		}
+		h3 {
+			@include md {
+				bottom: 420px;
+				position: absolute;
+			}
+			@include lg {
+				bottom: 420px;
+				margin-left: 5%;
+				text-align: left;
+			}
+		}
+	}
+	#video {
+		display: grid;
+		grid-template-areas: ". v1 ."
         ". v2 .";
-        row-gap: 10px;
-        padding-bottom: 30px;
-        @include md{
-            margin: 0 20px;
-            grid-template-columns: 50%;
-            grid-template-areas: 
-            "v1 v2";
-            column-gap: 20px;
-            padding: 212px 0 40px;
-        }
-        @include lg{
-            padding-top: 60px;
-        }
-        @include xl{
-            grid-area: lg;
-        }
-        li{
-            width: 100%;
-        }
-        #v1{
-            grid-area: v1;
-        }
-        #v2{
-            grid-area: v2;
-        }
-    }
+		grid-template-columns: 3% auto 3%;
+		padding-bottom: 30px;
+		row-gap: 10px;
+		@include md {
+			column-gap: 20px;
+			grid-template-areas: "v1 v2";
+			grid-template-columns: 50%;
+			margin: 0 20px;
+			padding: 212px 0 40px;
+		}
+		@include lg {
+			padding-top: 60px;
+		}
+		@include xl {
+			grid-area: lg;
+		}
+		li {
+			width: 100%;
+		}
+		#v1 {
+			grid-area: v1;
+		}
+		#v2 {
+			grid-area: v2;
+		}
+	}
 }

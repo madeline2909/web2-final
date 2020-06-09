@@ -1,186 +1,172 @@
 /* =============
     Section 7
 ============= */
-#section-7{
-    background-color: $cream;
-    .button{
-        a:link,
+#section-7 {
+	background-color: $cream;
+	.button {
+		a:link,
         a:visited {
-            text-align: center;
-            display: block;
-            padding: 12px 20px;
-            background-color: $green;
-            color: $cream;
-            text-decoration: none;
-            transition: 0.25s;
-        }
-
-        a:hover,
+			background-color: $green;
+			color: $cream;
+			display: block;
+			padding: 12px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: 0.25s;
+		}
+		a:hover,
         a:active {
-            color: $green;
-            background-color: $yellow;
-        }
-    }
-    
-    #section-7-news{
-        background-color: $earthy;
-        height: auto;
-        #news-container{
-            @include md{
-                margin: 0 10%;
-                padding-top: 49px;
-                padding-bottom: 50px;
-            }
-            @include lg{
-                padding: 30px 0;
-            }
-            @include xl{
-                grid-area: lg;
-            }
-        }
-        
-        @include lg{
-        }
-        #section-7-follow{
-            @include md{
-                width: 55%;
-                padding-bottom: 12px;
-            }
-            @include lg{
-                padding-bottom: 18px;
-                margin: auto;
-                width: 30%;
-            }
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                h4{
-                    @include lg{
-                        margin: 0 65px 15px;
-                    }
-                }
-                li{
-                    font-size: 30px;
-                    @include md{
-                        a:link,
+			background-color: $yellow;
+			color: $green;
+		}
+	}
+	#section-7-news {
+		background-color: $earthy;
+		height: auto;
+		#news-container {
+			@include md {
+				margin: 0 10%;
+				padding-bottom: 50px;
+				padding-top: 49px;
+			}
+			@include lg {
+				padding: 30px 0;
+			}
+			@include xl {
+				grid-area: lg;
+			}
+		}
+		@include lg {
+		}
+		#section-7-follow {
+			@include md {
+				padding-bottom: 12px;
+				width: 55%;
+			}
+			@include lg {
+				margin: auto;
+				padding-bottom: 18px;
+				width: 30%;
+			}
+			ul {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				h4 {
+					@include lg {
+						margin: 0 65px 15px;
+					}
+				}
+				li {
+					font-size: 30px;
+					@include md {
+						a:link,
                         a:visited {
-                            color: $cream;
-                            text-decoration: none;
-                            transition: 0.25s;
-                        }
-                
-                        a:hover,
+							color: $cream;
+							text-decoration: none;
+							transition: 0.25s;
+						}
+						a:hover,
                         a:active {
-                            color: $greenbrown;
-                        }
-                    }
-                    
-                    
-                }
-            }
-        }
-        #newsletter-items{
-            @include md{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                justify-content: space-between;
-            }
-            #email-container{
-                padding: 30px 15px;
-                @include md{
-                    padding: 0;
-                    margin-right: 20px;
-                    min-width: 400px;
-                }
-                @include lg{
-                    width: 60%;
-                }
-                h5{
-                    padding: 10px;
-                    font-style: italic;
-                    background-color: $cream;
-                    @include md{
-                        padding: 20px;
-                    }
-                }
-            }
-            
-            #news{
-                margin: 0 74px;
-                padding-bottom: 30px;
-                min-width: 174px;
-                @include md{
-                    margin: 0;
-                    padding:0;
-                }
-                @include lg{
-                    width: 40%;
-                }
-            }
-        
-        }
-        
-    }
-    #section-7-donate{
-        height: auto;
-        @include md{
-            height: 140px;
-            display: flex;
-            align-items: center;
-            display: grid;
-            grid-template-columns: 10% 30% 3% auto 10%;
-            grid-template-areas: 
-            ". donate . icons .";
-        }
-        @include xl{
-            grid-area: lg;
-        }
-        #donate{
-            min-width: 235px;
-            margin: 0 74px;
-            padding-top: 30px;
-            @include md{
-                max-width: 235px;
-                margin: 0;
-                padding: unset;
-                grid-area: donate;
-            }
-        }
-        ul{
-            padding: 25px 0 30px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-            @include md{
-                padding: unset;
-                grid-area: icons;
-                justify-content: space-between;
-            }
-            li{
-                font-size: 55px;
-                @include md{
-                    font-size: 40px;
-                }
-            }
-        }
-        
-        #paypal{
-            display: flex;
-            justify-content: center;
-            padding: 5px 70px;
-            margin: 0 100px 15px;
-            color: $white;
-            border-radius: 100px;
-            background-color: $black;
-            @include md{
-                padding: 5px 45px;
-                margin: 0;
-            }
-        }
-        
-    }
+							color: $greenbrown;
+						}
+					}
+				}
+			}
+		}
+		#newsletter-items {
+			@include md {
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+			}
+			#email-container {
+				padding: 30px 15px;
+				@include md {
+					margin-right: 20px;
+					min-width: 400px;
+					padding: 0;
+				}
+				@include lg {
+					width: 60%;
+				}
+				h5 {
+					background-color: $cream;
+					font-style: italic;
+					padding: 10px;
+					@include md {
+						padding: 20px;
+					}
+				}
+			}
+			#news {
+				margin: 0 74px;
+				min-width: 174px;
+				padding-bottom: 30px;
+				@include md {
+					margin: 0;
+					padding: 0;
+				}
+				@include lg {
+					width: 40%;
+				}
+			}
+		}
+	}
+	#section-7-donate {
+		height: auto;
+		@include md {
+			align-items: center;
+			display: grid;
+			grid-template-areas: ". donate . icons .";
+			grid-template-columns: 10% 30% 3% auto 10%;
+			height: 140px;
+		}
+		@include xl {
+			grid-area: lg;
+		}
+		#donate {
+			margin: 0 74px;
+			min-width: 235px;
+			padding-top: 30px;
+			@include md {
+				grid-area: donate;
+				margin: 0;
+				max-width: 235px;
+				padding: unset;
+			}
+		}
+		ul {
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			padding: 25px 0 30px;
+			@include md {
+				grid-area: icons;
+				justify-content: space-between;
+				padding: unset;
+			}
+			li {
+				font-size: 55px;
+				@include md {
+					font-size: 40px;
+				}
+			}
+		}
+		#paypal {
+			background-color: $black;
+			border-radius: 100px;
+			color: $white;
+			display: flex;
+			justify-content: center;
+			margin: 0 100px 15px;
+			padding: 5px 70px;
+			@include md {
+				margin: 0;
+				padding: 5px 45px;
+			}
+		}
+	}
 }
