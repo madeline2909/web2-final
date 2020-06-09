@@ -41,14 +41,26 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            
+            width: 80%;
+            @include md{
+                display: unset;
+            }
+            img{
+                @include md{
+                    margin: 25px;
+                }
+            }
             #title{
                 h1{
                     font-style: normal;
                 }
                 @include md{
+                    margin-left: 38px;
                     writing-mode: vertical-rl;
                     text-orientation: mixed;
+                }
+                @include lg{
+                    margin-left: 45px;
                 }
             }
         }
@@ -63,10 +75,13 @@ header {
             @include md {
                 display: none !important;
             }
-
+            
             i {
                 cursor: pointer;
+                color: $cream;
+                font-size: rem-calc(25);
             }
+            
         }
 
         #nav-container {
@@ -79,6 +94,7 @@ header {
                 display: block !important;
                 height: 75px;
                 padding: 0 15px;
+                margin-top: 0;
             }
             @include lg{
                 width: 705px;

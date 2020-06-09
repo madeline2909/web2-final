@@ -816,14 +816,31 @@ header > div #logo-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  header > div #logo-container {
+    display: unset;
+  }
+}
+@media (min-width: 768px) {
+  header > div #logo-container img {
+    margin: 25px;
+  }
 }
 header > div #logo-container #title h1 {
   font-style: normal;
 }
 @media (min-width: 768px) {
   header > div #logo-container #title {
+    margin-left: 38px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+  }
+}
+@media (min-width: 992px) {
+  header > div #logo-container #title {
+    margin-left: 45px;
   }
 }
 header > div #burger-container {
@@ -840,6 +857,8 @@ header > div #burger-container {
 }
 header > div #burger-container i {
   cursor: pointer;
+  color: #F9F6EF;
+  font-size: 1.5625rem;
 }
 header > div #nav-container {
   background-color: rgba(62, 57, 28, 0.5);
@@ -852,6 +871,7 @@ header > div #nav-container {
     display: block !important;
     height: 75px;
     padding: 0 15px;
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
@@ -951,12 +971,12 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   footer #copyright h5 {
+    margin-right: 2%;
     height: 180px;
   }
 }
 @media (min-width: 992px) {
   footer #copyright h5 {
-    margin-right: 2%;
     height: 170px;
   }
 }
@@ -1830,13 +1850,9 @@ footer #copyright h5 {
 }
 @media (min-width: 768px) {
   #section-4 #description {
+    display: unset;
     padding: 0;
     padding-right: 25px;
-  }
-}
-@media (min-width: 992px) {
-  #section-4 #description {
-    display: unset;
   }
 }
 @media (min-width: 768px) {

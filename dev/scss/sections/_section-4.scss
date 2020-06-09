@@ -152,11 +152,9 @@
         grid-area: des;
         padding:0 50px;
         @include md{
+            display: unset;
             padding: 0;
             padding-right: 25px;
-        }
-        @include lg{
-            display: unset;
         }
         
     }

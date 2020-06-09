@@ -83,10 +83,10 @@ footer{
             width: 100%;
             margin-right: 5%;
             @include md{
+                margin-right: 2%;
                 height: 180px;
             }
             @include lg{
-                margin-right: 2%;
                 height: 170px;
             }
         }
