@@ -1713,7 +1713,7 @@ footer #copyright h5 {
 }
 @media (min-width: 992px) {
   #section-4 #section-4-container {
-    background-position: 0 200px;
+    background-position: 0 100px;
     background-repeat: no-repeat;
     padding-top: 430px;
   }
